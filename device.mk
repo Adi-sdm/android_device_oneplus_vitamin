@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
 # API
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# Alert slider
+PRODUCT_PACKAGES += \
+    oplus-alert-slider
+    
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
