@@ -44,7 +44,7 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Alert slider
 PRODUCT_PACKAGES += \
-    oplus-alert-slider
+    alert-slider_daemon
     
 # Audio
 PRODUCT_PACKAGES += \
