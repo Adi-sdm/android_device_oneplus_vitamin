@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     tri-state-key-calibrate
 
 # API
+BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Audio
