@@ -20,12 +20,8 @@ on init
     write /dev/cpuset/system-background/cpus 0-1
     write /dev/cpuset/top-app/cpus 0-7
 
-    # Add a cpuset for kswapd-like thread
-    # We do not want kswapd-like thread running on super-big-core
-    mkdir /dev/cpuset/kswapd-like
-    write /dev/cpuset/kswapd-like/cpus 0-6
-    write /dev/cpuset/kswapd-like/mems 0
-    chmod 0660 /dev/cpuset/kswapd-like/tasks
+    # Disable multiple kswapd threads
+    write /proc/sys/vm/kswapd_threads 1
 
 on post-fs-data
     # Disable watermark boost
