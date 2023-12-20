@@ -65,6 +65,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libYTCommon.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
         system_ext/priv-app/ImsService/ImsService.apk)
             [ "$2" = "" ] && return 0
             apktool_patch "${2}" "${MY_DIR}/blob-patches/ImsService.patch"

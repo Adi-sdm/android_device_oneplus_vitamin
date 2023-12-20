@@ -1123,7 +1123,6 @@ odm/lib64/libskhynix_q2b_shared.so
 odm/lib64/libssd_det.so
 odm/lib64/libstblur_api.so
 odm/lib64/libstblur_capture_api.so
-odm/lib64/libstdc++.so
 odm/lib64/libstface_fd_api.so
 odm/lib64/libstfaceunlockppl.so
 odm/lib64/libstfd_mobile_api.so
