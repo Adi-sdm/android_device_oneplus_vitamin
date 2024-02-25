@@ -1,0 +1,3 @@
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-005a/leds/vibrator/brightness        u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-005a/leds/vibrator/seq               u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/11282000.i2c/i2c-12/12-005a/leds/vibrator/loop              u:object_r:sysfs_vibrator:s0
