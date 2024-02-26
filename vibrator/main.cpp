@@ -32,5 +32,5 @@ int main() {
     CHECK_EQ(status, STATUS_OK);
 
     ABinderProcess_joinThreadPool();
-    return EXIT_FAILURE;  // should not reach
+    return EXIT_FAILURE; // should not reach
 }

@@ -38,6 +38,18 @@ ndk::ScopedAStatus Vibrator::setNode(const std::string path, std::string value) 
     return ndk::ScopedAStatus::ok();
 }
 
+ndk::ScopedAStatus Vibrator::setNodes(std::vector<std::pair<std::string, std::string>> values) {
+    for (const auto& [path, value] : values) {
+        ndk::ScopedAStatus status = setNode(path, value);
+
+        if (!status.isOk()) {
+            return status;
+        }
+    }
+
+    return ndk::ScopedAStatus::ok();
+}
+
 bool Vibrator::exists(const std::string path) {
     std::ofstream file(path);
     return file.is_open();
@@ -60,7 +72,7 @@ int Vibrator::getIntProperty(const std::string& key, const int fallback) {
     return ::android::base::GetIntProperty(kVibratorPropPrefix + key, fallback);
 }
 
-}  // namespace vibrator
-}  // namespace hardware
-}  // namespace android
-}  // namespace aidl
+} // namespace vibrator
+} // namespace hardware
+} // namespace android
+} // namespace aidl

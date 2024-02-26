@@ -15,6 +15,7 @@
  */
 
 #include "Vibrator.h"
+#include "VibratorSettings.h"
 
 #include <android-base/logging.h>
 #include <thread>
@@ -23,23 +24,6 @@ namespace aidl {
 namespace android {
 namespace hardware {
 namespace vibrator {
-
-static std::string SEQ_PATH = "/sys/class/leds/vibrator/seq";
-
-// adapted from https://github.com/LineageOS/android_hardware_mediatek/tree/lineage-20/aidl/vibrator and https://github.com/LineageOS/android_hardware_oneplus/blob/lineage-21/aidl/vibrator/Vibrator.cpp
-static std::vector<std::pair<std::string, std::string>> SETUP_HAPTIC{
-    // cancels previous vibrations
-    { "/sys/class/leds/vibrator/activate", "0" }, 
-    { "/sys/class/leds/vibrator/brightness", "0" },
-
-    { "/sys/class/leds/vibrator/duration", "10" },
-    { "/sys/class/leds/vibrator/loop", "0x00 0x00" },
-};
-// after writing seq and SETUP_HAPTIC
-static std::vector<std::pair<std::string, std::string>> EXECUTE_HAPTIC{
-    { "/sys/class/leds/vibrator/brightness", "1" }, // start haptic
-    { "/sys/class/leds/vibrator/brightness", "0" }, // end haptic
-};
 
 ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
     LOG(VERBOSE) << "Vibrator reporting capabilities";
@@ -53,50 +37,53 @@ ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
 ndk::ScopedAStatus Vibrator::off() {
     LOG(VERBOSE) << "Vibrator off";
 
-    setNode("/sys/class/leds/vibrator/brightness", "0");
-    setNode("/sys/class/leds/vibrator/activate", "0");
-    
+    ndk::ScopedAStatus status = setNodes(STOP_VIBRATIONS);
+    if (!status.isOk()) return status;
+
     return ndk::ScopedAStatus::ok();
 }
 
-ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs,
-                                const std::shared_ptr<IVibratorCallback>& callback) {
+ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs, const std::shared_ptr<IVibratorCallback>& callback) {
     ndk::ScopedAStatus status;
 
     LOG(VERBOSE) << "Vibrator on for timeoutMs: " << timeoutMs;
 
-    if (timeoutMs < 1)
-    {
-        return off();
-    }
+    if (timeoutMs < 1) return off();
 
     // if timeoutMs is bigger than 102, we do a regular vibration
     if (timeoutMs < 103) {
         // begin haptic
-        for (const auto &[path, value] : SETUP_HAPTIC) {
-            setNode(path, value);
-        }
+        status = setNodes(SETUP_CLICK_HAPTIC);
+        if (!status.isOk()) return status;
 
-        if (timeoutMs < 3) setNode(SEQ_PATH, "0x00 0x07");
-        else if (timeoutMs < 10) setNode(SEQ_PATH, "0x00 0x0e");
-        else if (timeoutMs < 20) setNode(SEQ_PATH, "0x00 0x01");
-        else if (timeoutMs < 40) setNode(SEQ_PATH, "0x00 0x0d");
-        else if (timeoutMs < 60) setNode(SEQ_PATH, "0x00 0x04");
-        else if (timeoutMs < 80) setNode(SEQ_PATH, "0x00 0x06");
-        else setNode(SEQ_PATH, "0x00 0x0a");
+        std::string seqValue = "0x00 0x00";
+
+        if (timeoutMs < 3) seqValue = "0x00 0x07";
+        else if (timeoutMs < 10) seqValue = "0x00 0x0e";
+        else if (timeoutMs < 20) seqValue = "0x00 0x01";
+        else if (timeoutMs < 40) seqValue = "0x00 0x0d";
+        else if (timeoutMs < 60) seqValue = "0x00 0x04";
+        else if (timeoutMs < 80) seqValue = "0x00 0x06";
+        else seqValue = "0x00 0x0a";
+
+        // set the seq value
+        status = setNode(SEQ_PATH, seqValue);
+        if (!status.isOk()) return status;
 
         // execute haptic
-        for (const auto &[path, value] : EXECUTE_HAPTIC) {
-            setNode(path, value);
-        }
-    }
-    else {
-        // regular vibration
-        setNode("/sys/class/leds/vibrator/activate", "0");
-        setNode("/sys/class/leds/vibrator/brightness", "0");
-        setNode("/sys/class/leds/vibrator/seq", "0x00 0x00");
-        setNode("/sys/class/leds/vibrator/duration", std::to_string(timeoutMs));
-        setNode("/sys/class/leds/vibrator/activate", "1");
+        status = setNodes(EXECUTE_CLICK_HAPTIC);
+        if (!status.isOk()) return status;
+    } else {
+        // setup vibration
+        status = setNodes(SETUP_NORMAL_VIBRATION);
+        if (!status.isOk()) return status;
+
+        status = setNode(DURATION_PATH, std::to_string(timeoutMs));
+        if (!status.isOk()) return status;
+
+        // execute vibration
+        status = setNodes(EXECUTE_NORMAL_VIBRATION);
+        if (!status.isOk()) return status;
     }
 
     if (callback != nullptr) {
@@ -112,21 +99,8 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs,
     return ndk::ScopedAStatus::ok();
 }
 
-ndk::ScopedAStatus Vibrator::perform(Effect , EffectStrength,
-                                     const std::shared_ptr<IVibratorCallback>& callback,
-                                     int32_t* ) {
-    // TODO
-
-    // if (callback != nullptr) {
-    //     std::thread([=] {
-    //         LOG(VERBOSE) << "Starting perform on another thread";
-    //         usleep(/*timeoutMs*/ * 1000);
-    //         LOG(VERBOSE) << "Notifying perform complete";
-    //         callback->onComplete();
-    //     }).detach();
-    // }
-
-    return ndk::ScopedAStatus::ok();
+ndk::ScopedAStatus Vibrator::perform(Effect, EffectStrength, const std::shared_ptr<IVibratorCallback>& callback, int32_t*) {
+    return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
 ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* /* _aidl_return */) {
@@ -153,13 +127,11 @@ ndk::ScopedAStatus Vibrator::getSupportedPrimitives(std::vector<CompositePrimiti
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getPrimitiveDuration(CompositePrimitive primitive __unused,
-                                                  int32_t* durationMs __unused) {
+ndk::ScopedAStatus Vibrator::getPrimitiveDuration(CompositePrimitive primitive __unused, int32_t* durationMs __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::compose(const std::vector<CompositeEffect>& composite __unused,
-                                     const std::shared_ptr<IVibratorCallback>& callback __unused) {
+ndk::ScopedAStatus Vibrator::compose(const std::vector<CompositeEffect>& composite __unused, const std::shared_ptr<IVibratorCallback>& callback __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
@@ -175,44 +147,43 @@ ndk::ScopedAStatus Vibrator::alwaysOnDisable(int32_t id __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getResonantFrequency(float *resonantFreqHz __unused) {
+ndk::ScopedAStatus Vibrator::getResonantFrequency(float* resonantFreqHz __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getQFactor(float *qFactor __unused) {
+ndk::ScopedAStatus Vibrator::getQFactor(float* qFactor __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getFrequencyResolution(float *freqResolutionHz __unused) {
+ndk::ScopedAStatus Vibrator::getFrequencyResolution(float* freqResolutionHz __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getFrequencyMinimum(float *freqMinimumHz __unused) {
+ndk::ScopedAStatus Vibrator::getFrequencyMinimum(float* freqMinimumHz __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getBandwidthAmplitudeMap(std::vector<float> *_aidl_return __unused) {
+ndk::ScopedAStatus Vibrator::getBandwidthAmplitudeMap(std::vector<float>* _aidl_return __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getPwlePrimitiveDurationMax(int32_t *durationMs __unused) {
+ndk::ScopedAStatus Vibrator::getPwlePrimitiveDurationMax(int32_t* durationMs __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getPwleCompositionSizeMax(int32_t *maxSize __unused) {
+ndk::ScopedAStatus Vibrator::getPwleCompositionSizeMax(int32_t* maxSize __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::getSupportedBraking(std::vector<Braking> *supported __unused) {
+ndk::ScopedAStatus Vibrator::getSupportedBraking(std::vector<Braking>* supported __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-ndk::ScopedAStatus Vibrator::composePwle(const std::vector<PrimitivePwle> &composite __unused,
-                                         const std::shared_ptr<IVibratorCallback> &callback __unused) {
+ndk::ScopedAStatus Vibrator::composePwle(const std::vector<PrimitivePwle>& composite __unused, const std::shared_ptr<IVibratorCallback>& callback __unused) {
     return ndk::ScopedAStatus(AStatus_fromExceptionCode(EX_UNSUPPORTED_OPERATION));
 }
 
-}  // namespace vibrator
-}  // namespace hardware
-}  // namespace android
-}  // namespace aidl
+} // namespace vibrator
+} // namespace hardware
+} // namespace android
+} // namespace aidl
