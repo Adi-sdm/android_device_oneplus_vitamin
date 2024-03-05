@@ -95,6 +95,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
             ;;
+        vendor/etc/media_profiles_V1_0.xml)
+            [ "$2" = "" ] && return 0
+            sed -i '/<CamcorderProfiles cameraId="3">/,/<\/CamcorderProfiles>/ { /^[[:space:]]*<!--/! { /^[[:space:]]*$/! { s/^/<!-- /; s/$/ -->/; } } }' "${2}"
+            ;;
         vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
