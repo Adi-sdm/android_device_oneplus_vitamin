@@ -58,6 +58,7 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs, const std::shared_ptr<IVibrat
 
         std::string seqValue = "0x00 0x00";
 
+#ifdef VIBRATOR_ALT_SEQ_TYPE
         if (timeoutMs < 3) seqValue = "0x00 0x07";
         else if (timeoutMs < 10) seqValue = "0x00 0x0e";
         else if (timeoutMs < 20) seqValue = "0x00 0x01";
@@ -65,6 +66,15 @@ ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs, const std::shared_ptr<IVibrat
         else if (timeoutMs < 60) seqValue = "0x00 0x04";
         else if (timeoutMs < 80) seqValue = "0x00 0x06";
         else seqValue = "0x00 0x0a";
+#else
+        if (timeoutMs < 3) seqValue = "0x00 0x0b";
+        else if (timeoutMs < 10) seqValue = "0x00 0x0b";
+        else if (timeoutMs < 20) seqValue = "0x00 0x07";
+        else if (timeoutMs < 40) seqValue = "0x00 0x09";
+        else if (timeoutMs < 60) seqValue = "0x00 0x0a";
+        else if (timeoutMs < 80) seqValue = "0x00 0x0b";
+        else seqValue = "0x00 0x0a";
+#endif
 
         // set the seq value
         status = setNode(SEQ_PATH, seqValue);
