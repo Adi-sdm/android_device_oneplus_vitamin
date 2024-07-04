@@ -1,6 +1,9 @@
 subsystem adf
     devname uevent_devname
 
+# Charger
+/sys/class/oplus_chg/*  mmi_charging_enable    0660    system  system
+
 # NFC
 /dev/nq-nci    0660    nfc               nfc
 /dev/p73       0660    secure_element    secure_element
