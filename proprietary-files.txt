@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Nord 3 5G (CPH2491_14.0.0.520(EX01)).
+## are from OnePlus Nord 3 5G (CPH2491_14.0.0.530(EX01)).
 
 # AEE
 vendor/lib64/libaedv.so
@@ -1199,6 +1199,7 @@ vendor/lib64/libmtkcam_hal_custom_state.so
 vendor/lib64/libmtkcam_hal_custom_utils.so
 vendor/lib64/libmtkcam_ispEngine.so
 vendor/lib64/libmtkisp_metadata_v2.so
+vendor/lib64/liboplus.difference.analysis.so
 vendor/lib64/liboplus_mtkcam_lightsensorprovider.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
