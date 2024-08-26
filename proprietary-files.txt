@@ -1743,6 +1743,11 @@ vendor/lib64/libfgauge_gm30.so
 # IMS
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
+system_ext/framework/mediatek-common.jar
+system_ext/framework/mediatek-framework.jar
+system_ext/framework/mediatek-ims-base.jar
+system_ext/framework/mediatek-ims-common.jar
+system_ext/framework/mediatek-ims-extension-plugin.jar
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libimsma.so
 system_ext/lib64/libimsma_adapt.so
@@ -1758,6 +1763,7 @@ system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/priv-app/ImsService/ImsService.apk
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vtservice_hidl
 vendor/bin/ipsec_mon
@@ -1783,19 +1789,6 @@ vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0_vendor
-
-# IMS (Framework) - from plato-user 14 UP1A.230905.011 V816.0.9.0.ULQMIXM release-keys
-system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar|895c6819d00deb385675cc7b90f073d0b6fbd29d
-system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar|2dc20e795af8e16161b9281d0f636c63c6869a7d
-system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar|a6f7ae937de5b9c25e41af8c15db2717a31a6e97
-system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar|90e4bb7a6b8264f71dbcf4b4ec53a88d9e842ba2
-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar|4562720d65136b189d661f248fd3170a749cada3
-system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar|686eaf0a472f44194116a0861944483cd9b09a38
-system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar|6248b5b3fcf935ef59ab3c20b0c11a104e8fbe79
-system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar|ab09685dc87d56e57e70367c5fc2539efd5fcfd0
-
-# IMS (App) - from plato-user 14 UP1A.230905.011 V816.0.9.0.ULQMIXM release-keys (patched)
-system_ext/priv-app/ImsService/ImsService.apk:system/priv-app/ImsService/ImsService.apk|b9ece2c2f442b8bdd6299baa3d23ec923c37122b
 
 # IR
 odm/bin/hw/android.hardware.ir-service
