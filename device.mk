@@ -129,6 +129,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml
 
+
 # Carrier Config Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay
@@ -389,6 +390,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
+
+# RcsService
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    RcsService \
+    PresencePolling
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
