@@ -129,6 +129,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml
 
+# Carrier Config Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay
+
 # Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
 
