@@ -342,7 +342,8 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
     OPlusTetheringConfigResTarget \
-    OPlusWifiResTarget
+    OPlusWifiResTarget \
+    TelephonyOverlayVitamin
 
 PRODUCT_PACKAGES += \
     LineageSDKResTarget \
