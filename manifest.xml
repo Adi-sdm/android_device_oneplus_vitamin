@@ -359,5 +359,36 @@
         </interface>
         <fqname>@1.0::IVideoTelephony/default</fqname>
     </hal>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.atms</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IATMs</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IATMs/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.camera.postproc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPostDevice</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@1.0::IPostDevice/internal/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.oplus.hardware.stability.oplus_project</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IOplusProject</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IOplusProject/default</fqname>
+    </hal>
     <kernel target-level="6"/>
 </manifest>
