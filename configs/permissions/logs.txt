@@ -1,0 +1,1381 @@
+Running product configuration...
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=14
+LINEAGE_VERSION=2by2-Project-14-20240901-vitamin
+PRODUCT_INCLUDE_TAGS=com.android.mainline mainline_module_prebuilt_nightly
+TARGET_PRODUCT=lineage_vitamin
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv9-a
+TARGET_CPU_VARIANT=generic
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.15.0-1067-gcp-x86_64-Ubuntu-20.04.6-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=AP2A.240805.005
+OUT_DIR=out
+WITH_GMS=true
+PRODUCT_SOONG_NAMESPACES=device/oplus/camera device/oneplus/vitamin hardware/google/pixel hardware/google/interfaces hardware/lineage/interfaces/power-libperfmgr hardware/mediatek hardware/mediatek/libmtkperf_client hardware/oplus vendor/oneplus/vitamin vendor/2by2-prebuilt-apps vendor/gapps/arm64 vendor/gapps/common vendor/gapps/overlay vendor/certification
+============================================
+[  0% 1/1167] regenerate globs shard 0 of 1024
+[  0% 2/1167] regenerate globs shard 1 of 1024
+[  0% 3/1167] regenerate globs shard 2 of 1024
+[  0% 4/1167] regenerate globs shard 3 of 1024
+[  0% 5/1167] regenerate globs shard 4 of 1024
+[  0% 6/1167] regenerate globs shard 5 of 1024
+[  0% 7/1167] regenerate globs shard 6 of 1024
+[  0% 8/1167] regenerate globs shard 7 of 1024
+[  0% 9/1167] regenerate globs shard 8 of 1024
+[  0% 10/1167] regenerate globs shard 9 of 1024
+[  0% 11/1167] regenerate globs shard 10 of 1024
+[  1% 12/1167] regenerate globs shard 11 of 1024
+[  1% 13/1167] regenerate globs shard 12 of 1024
+[  1% 14/1167] regenerate globs shard 13 of 1024
+[  1% 15/1167] regenerate globs shard 14 of 1024
+[  1% 16/1167] regenerate globs shard 15 of 1024
+[  1% 17/1167] regenerate globs shard 16 of 1024
+[  1% 18/1167] regenerate globs shard 18 of 1024
+[  1% 19/1167] regenerate globs shard 17 of 1024
+[  1% 20/1167] regenerate globs shard 19 of 1024
+[  1% 21/1167] regenerate globs shard 20 of 1024
+[  1% 22/1167] regenerate globs shard 21 of 1024
+[  1% 23/1167] regenerate globs shard 22 of 1024
+[  2% 24/1167] regenerate globs shard 23 of 1024
+[  2% 25/1167] regenerate globs shard 24 of 1024
+[  2% 26/1167] regenerate globs shard 25 of 1024
+[  2% 27/1167] regenerate globs shard 26 of 1024
+[  2% 28/1167] regenerate globs shard 27 of 1024
+[  2% 29/1167] regenerate globs shard 28 of 1024
+[  2% 30/1167] regenerate globs shard 29 of 1024
+[  2% 31/1167] regenerate globs shard 30 of 1024
+[  2% 32/1167] regenerate globs shard 31 of 1024
+[  2% 33/1167] regenerate globs shard 32 of 1024
+[  2% 34/1167] regenerate globs shard 33 of 1024
+[  2% 35/1167] regenerate globs shard 34 of 1024
+[  3% 36/1167] regenerate globs shard 35 of 1024
+[  3% 37/1167] regenerate globs shard 36 of 1024
+[  3% 38/1167] regenerate globs shard 37 of 1024
+[  3% 39/1167] regenerate globs shard 38 of 1024
+[  3% 40/1167] regenerate globs shard 39 of 1024
+[  3% 41/1167] regenerate globs shard 40 of 1024
+[  3% 42/1167] regenerate globs shard 41 of 1024
+[  3% 43/1167] regenerate globs shard 42 of 1024
+[  3% 44/1167] regenerate globs shard 43 of 1024
+[  3% 45/1167] regenerate globs shard 44 of 1024
+[  3% 46/1167] regenerate globs shard 45 of 1024
+[  4% 47/1167] regenerate globs shard 46 of 1024
+[  4% 48/1167] regenerate globs shard 47 of 1024
+[  4% 49/1167] regenerate globs shard 48 of 1024
+[  4% 50/1167] regenerate globs shard 49 of 1024
+[  4% 51/1167] regenerate globs shard 51 of 1024
+[  4% 52/1167] regenerate globs shard 52 of 1024
+[  4% 53/1167] regenerate globs shard 53 of 1024
+[  4% 54/1167] regenerate globs shard 54 of 1024
+[  4% 55/1167] regenerate globs shard 56 of 1024
+[  4% 56/1167] regenerate globs shard 50 of 1024
+[  4% 57/1167] regenerate globs shard 55 of 1024
+[  4% 58/1167] regenerate globs shard 57 of 1024
+[  5% 59/1167] regenerate globs shard 58 of 1024
+[  5% 60/1167] regenerate globs shard 59 of 1024
+[  5% 61/1167] regenerate globs shard 60 of 1024
+[  5% 62/1167] regenerate globs shard 61 of 1024
+[  5% 63/1167] regenerate globs shard 62 of 1024
+[  5% 64/1167] regenerate globs shard 63 of 1024
+[  5% 65/1167] regenerate globs shard 64 of 1024
+[  5% 66/1167] regenerate globs shard 65 of 1024
+[  5% 67/1167] regenerate globs shard 66 of 1024
+[  5% 68/1167] regenerate globs shard 67 of 1024
+[  5% 69/1167] regenerate globs shard 68 of 1024
+[  5% 70/1167] regenerate globs shard 69 of 1024
+[  6% 71/1167] regenerate globs shard 70 of 1024
+[  6% 72/1167] regenerate globs shard 71 of 1024
+[  6% 73/1167] regenerate globs shard 72 of 1024
+[  6% 74/1167] regenerate globs shard 73 of 1024
+[  6% 75/1167] regenerate globs shard 74 of 1024
+[  6% 76/1167] regenerate globs shard 76 of 1024
+[  6% 77/1167] regenerate globs shard 75 of 1024
+[  6% 78/1167] regenerate globs shard 77 of 1024
+[  6% 79/1167] regenerate globs shard 78 of 1024
+[  6% 80/1167] regenerate globs shard 79 of 1024
+[  6% 81/1167] regenerate globs shard 80 of 1024
+[  7% 82/1167] regenerate globs shard 81 of 1024
+[  7% 83/1167] regenerate globs shard 82 of 1024
+[  7% 84/1167] regenerate globs shard 83 of 1024
+[  7% 85/1167] regenerate globs shard 86 of 1024
+[  7% 86/1167] regenerate globs shard 84 of 1024
+[  7% 87/1167] regenerate globs shard 85 of 1024
+[  7% 88/1167] regenerate globs shard 87 of 1024
+[  7% 89/1167] regenerate globs shard 88 of 1024
+[  7% 90/1167] regenerate globs shard 89 of 1024
+[  7% 91/1167] regenerate globs shard 90 of 1024
+[  7% 92/1167] regenerate globs shard 91 of 1024
+[  7% 93/1167] regenerate globs shard 92 of 1024
+[  8% 94/1167] regenerate globs shard 93 of 1024
+[  8% 95/1167] regenerate globs shard 94 of 1024
+[  8% 96/1167] regenerate globs shard 95 of 1024
+[  8% 97/1167] regenerate globs shard 96 of 1024
+[  8% 98/1167] regenerate globs shard 97 of 1024
+[  8% 99/1167] regenerate globs shard 99 of 1024
+[  8% 100/1167] regenerate globs shard 98 of 1024
+[  8% 101/1167] regenerate globs shard 100 of 1024
+[  8% 102/1167] regenerate globs shard 101 of 1024
+[  8% 103/1167] regenerate globs shard 103 of 1024
+[  8% 104/1167] regenerate globs shard 104 of 1024
+[  8% 105/1167] regenerate globs shard 102 of 1024
+[  9% 106/1167] regenerate globs shard 105 of 1024
+[  9% 107/1167] regenerate globs shard 106 of 1024
+[  9% 108/1167] regenerate globs shard 107 of 1024
+[  9% 109/1167] regenerate globs shard 108 of 1024
+[  9% 110/1167] regenerate globs shard 109 of 1024
+[  9% 111/1167] regenerate globs shard 110 of 1024
+[  9% 112/1167] regenerate globs shard 111 of 1024
+[  9% 113/1167] regenerate globs shard 112 of 1024
+[  9% 114/1167] regenerate globs shard 113 of 1024
+[  9% 115/1167] regenerate globs shard 114 of 1024
+[  9% 116/1167] regenerate globs shard 115 of 1024
+[ 10% 117/1167] regenerate globs shard 116 of 1024
+[ 10% 118/1167] regenerate globs shard 117 of 1024
+[ 10% 119/1167] regenerate globs shard 118 of 1024
+[ 10% 120/1167] regenerate globs shard 119 of 1024
+[ 10% 121/1167] regenerate globs shard 120 of 1024
+[ 10% 122/1167] regenerate globs shard 121 of 1024
+[ 10% 123/1167] regenerate globs shard 122 of 1024
+[ 10% 124/1167] regenerate globs shard 123 of 1024
+[ 10% 125/1167] regenerate globs shard 124 of 1024
+[ 10% 126/1167] regenerate globs shard 125 of 1024
+[ 10% 127/1167] regenerate globs shard 126 of 1024
+[ 10% 128/1167] regenerate globs shard 127 of 1024
+[ 11% 129/1167] regenerate globs shard 128 of 1024
+[ 11% 130/1167] regenerate globs shard 129 of 1024
+[ 11% 131/1167] regenerate globs shard 130 of 1024
+[ 11% 132/1167] regenerate globs shard 131 of 1024
+[ 11% 133/1167] regenerate globs shard 132 of 1024
+[ 11% 134/1167] regenerate globs shard 133 of 1024
+[ 11% 135/1167] regenerate globs shard 134 of 1024
+[ 11% 136/1167] regenerate globs shard 135 of 1024
+[ 11% 137/1167] regenerate globs shard 136 of 1024
+[ 11% 138/1167] regenerate globs shard 137 of 1024
+[ 11% 139/1167] regenerate globs shard 138 of 1024
+[ 11% 140/1167] regenerate globs shard 139 of 1024
+[ 12% 141/1167] regenerate globs shard 140 of 1024
+[ 12% 142/1167] regenerate globs shard 141 of 1024
+[ 12% 143/1167] regenerate globs shard 142 of 1024
+[ 12% 144/1167] regenerate globs shard 143 of 1024
+[ 12% 145/1167] regenerate globs shard 144 of 1024
+[ 12% 146/1167] regenerate globs shard 145 of 1024
+[ 12% 147/1167] regenerate globs shard 146 of 1024
+[ 12% 148/1167] regenerate globs shard 147 of 1024
+[ 12% 149/1167] regenerate globs shard 148 of 1024
+[ 12% 150/1167] regenerate globs shard 149 of 1024
+[ 12% 151/1167] regenerate globs shard 150 of 1024
+[ 13% 152/1167] regenerate globs shard 151 of 1024
+[ 13% 153/1167] regenerate globs shard 152 of 1024
+[ 13% 154/1167] regenerate globs shard 153 of 1024
+[ 13% 155/1167] regenerate globs shard 154 of 1024
+[ 13% 156/1167] regenerate globs shard 155 of 1024
+[ 13% 157/1167] regenerate globs shard 156 of 1024
+[ 13% 158/1167] regenerate globs shard 157 of 1024
+[ 13% 159/1167] regenerate globs shard 158 of 1024
+[ 13% 160/1167] regenerate globs shard 159 of 1024
+[ 13% 161/1167] regenerate globs shard 160 of 1024
+[ 13% 162/1167] regenerate globs shard 161 of 1024
+[ 13% 163/1167] regenerate globs shard 162 of 1024
+[ 14% 164/1167] regenerate globs shard 163 of 1024
+[ 14% 165/1167] regenerate globs shard 164 of 1024
+[ 14% 166/1167] regenerate globs shard 165 of 1024
+[ 14% 167/1167] regenerate globs shard 166 of 1024
+[ 14% 168/1167] regenerate globs shard 167 of 1024
+[ 14% 169/1167] regenerate globs shard 168 of 1024
+[ 14% 170/1167] regenerate globs shard 169 of 1024
+[ 14% 171/1167] regenerate globs shard 170 of 1024
+[ 14% 172/1167] regenerate globs shard 171 of 1024
+[ 14% 173/1167] regenerate globs shard 172 of 1024
+[ 14% 174/1167] regenerate globs shard 174 of 1024
+[ 14% 175/1167] regenerate globs shard 175 of 1024
+[ 15% 176/1167] regenerate globs shard 176 of 1024
+[ 15% 177/1167] regenerate globs shard 177 of 1024
+[ 15% 178/1167] regenerate globs shard 178 of 1024
+[ 15% 179/1167] regenerate globs shard 173 of 1024
+[ 15% 180/1167] regenerate globs shard 179 of 1024
+[ 15% 181/1167] regenerate globs shard 180 of 1024
+[ 15% 182/1167] regenerate globs shard 181 of 1024
+[ 15% 183/1167] regenerate globs shard 182 of 1024
+[ 15% 184/1167] regenerate globs shard 183 of 1024
+[ 15% 185/1167] regenerate globs shard 184 of 1024
+[ 15% 186/1167] regenerate globs shard 185 of 1024
+[ 16% 187/1167] regenerate globs shard 186 of 1024
+[ 16% 188/1167] regenerate globs shard 187 of 1024
+[ 16% 189/1167] regenerate globs shard 188 of 1024
+[ 16% 190/1167] regenerate globs shard 189 of 1024
+[ 16% 191/1167] regenerate globs shard 190 of 1024
+[ 16% 192/1167] regenerate globs shard 191 of 1024
+[ 16% 193/1167] regenerate globs shard 192 of 1024
+[ 16% 194/1167] regenerate globs shard 193 of 1024
+[ 16% 195/1167] regenerate globs shard 194 of 1024
+[ 16% 196/1167] regenerate globs shard 195 of 1024
+[ 16% 197/1167] regenerate globs shard 196 of 1024
+[ 16% 198/1167] regenerate globs shard 197 of 1024
+[ 17% 199/1167] regenerate globs shard 199 of 1024
+[ 17% 200/1167] regenerate globs shard 200 of 1024
+[ 17% 201/1167] regenerate globs shard 198 of 1024
+[ 17% 202/1167] regenerate globs shard 201 of 1024
+[ 17% 203/1167] regenerate globs shard 202 of 1024
+[ 17% 204/1167] regenerate globs shard 203 of 1024
+[ 17% 205/1167] regenerate globs shard 204 of 1024
+[ 17% 206/1167] regenerate globs shard 205 of 1024
+[ 17% 207/1167] regenerate globs shard 206 of 1024
+[ 17% 208/1167] regenerate globs shard 207 of 1024
+[ 17% 209/1167] regenerate globs shard 208 of 1024
+[ 17% 210/1167] regenerate globs shard 209 of 1024
+[ 18% 211/1167] regenerate globs shard 210 of 1024
+[ 18% 212/1167] regenerate globs shard 211 of 1024
+[ 18% 213/1167] regenerate globs shard 212 of 1024
+[ 18% 214/1167] regenerate globs shard 213 of 1024
+[ 18% 215/1167] regenerate globs shard 214 of 1024
+[ 18% 216/1167] regenerate globs shard 215 of 1024
+[ 18% 217/1167] regenerate globs shard 216 of 1024
+[ 18% 218/1167] regenerate globs shard 217 of 1024
+[ 18% 219/1167] regenerate globs shard 218 of 1024
+[ 18% 220/1167] regenerate globs shard 219 of 1024
+[ 18% 221/1167] regenerate globs shard 220 of 1024
+[ 19% 222/1167] regenerate globs shard 221 of 1024
+[ 19% 223/1167] regenerate globs shard 222 of 1024
+[ 19% 224/1167] regenerate globs shard 223 of 1024
+[ 19% 225/1167] regenerate globs shard 224 of 1024
+[ 19% 226/1167] regenerate globs shard 226 of 1024
+[ 19% 227/1167] regenerate globs shard 227 of 1024
+[ 19% 228/1167] regenerate globs shard 225 of 1024
+[ 19% 229/1167] regenerate globs shard 228 of 1024
+[ 19% 230/1167] regenerate globs shard 229 of 1024
+[ 19% 231/1167] regenerate globs shard 230 of 1024
+[ 19% 232/1167] regenerate globs shard 231 of 1024
+[ 19% 233/1167] regenerate globs shard 232 of 1024
+[ 20% 234/1167] regenerate globs shard 233 of 1024
+[ 20% 235/1167] regenerate globs shard 234 of 1024
+[ 20% 236/1167] regenerate globs shard 235 of 1024
+[ 20% 237/1167] regenerate globs shard 236 of 1024
+[ 20% 238/1167] regenerate globs shard 237 of 1024
+[ 20% 239/1167] regenerate globs shard 238 of 1024
+[ 20% 240/1167] regenerate globs shard 239 of 1024
+[ 20% 241/1167] regenerate globs shard 240 of 1024
+[ 20% 242/1167] regenerate globs shard 241 of 1024
+[ 20% 243/1167] regenerate globs shard 242 of 1024
+[ 20% 244/1167] regenerate globs shard 243 of 1024
+[ 20% 245/1167] regenerate globs shard 244 of 1024
+[ 21% 246/1167] regenerate globs shard 246 of 1024
+[ 21% 247/1167] regenerate globs shard 245 of 1024
+[ 21% 248/1167] regenerate globs shard 247 of 1024
+[ 21% 249/1167] regenerate globs shard 248 of 1024
+[ 21% 250/1167] regenerate globs shard 249 of 1024
+[ 21% 251/1167] regenerate globs shard 250 of 1024
+[ 21% 252/1167] regenerate globs shard 251 of 1024
+[ 21% 253/1167] regenerate globs shard 253 of 1024
+[ 21% 254/1167] regenerate globs shard 252 of 1024
+[ 21% 255/1167] regenerate globs shard 254 of 1024
+[ 21% 256/1167] regenerate globs shard 255 of 1024
+[ 22% 257/1167] regenerate globs shard 256 of 1024
+[ 22% 258/1167] regenerate globs shard 258 of 1024
+[ 22% 259/1167] regenerate globs shard 257 of 1024
+[ 22% 260/1167] regenerate globs shard 259 of 1024
+[ 22% 261/1167] regenerate globs shard 260 of 1024
+[ 22% 262/1167] regenerate globs shard 261 of 1024
+[ 22% 263/1167] regenerate globs shard 262 of 1024
+[ 22% 264/1167] regenerate globs shard 263 of 1024
+[ 22% 265/1167] regenerate globs shard 264 of 1024
+[ 22% 266/1167] regenerate globs shard 265 of 1024
+[ 22% 267/1167] regenerate globs shard 266 of 1024
+[ 22% 268/1167] regenerate globs shard 267 of 1024
+[ 23% 269/1167] regenerate globs shard 268 of 1024
+[ 23% 270/1167] regenerate globs shard 269 of 1024
+[ 23% 271/1167] regenerate globs shard 270 of 1024
+[ 23% 272/1167] regenerate globs shard 271 of 1024
+[ 23% 273/1167] regenerate globs shard 272 of 1024
+[ 23% 274/1167] regenerate globs shard 273 of 1024
+[ 23% 275/1167] regenerate globs shard 274 of 1024
+[ 23% 276/1167] regenerate globs shard 275 of 1024
+[ 23% 277/1167] regenerate globs shard 276 of 1024
+[ 23% 278/1167] regenerate globs shard 277 of 1024
+[ 23% 279/1167] regenerate globs shard 278 of 1024
+[ 23% 280/1167] regenerate globs shard 279 of 1024
+[ 24% 281/1167] regenerate globs shard 280 of 1024
+[ 24% 282/1167] regenerate globs shard 281 of 1024
+[ 24% 283/1167] regenerate globs shard 282 of 1024
+[ 24% 284/1167] regenerate globs shard 283 of 1024
+[ 24% 285/1167] regenerate globs shard 284 of 1024
+[ 24% 286/1167] regenerate globs shard 285 of 1024
+[ 24% 287/1167] regenerate globs shard 286 of 1024
+[ 24% 288/1167] regenerate globs shard 287 of 1024
+[ 24% 289/1167] regenerate globs shard 288 of 1024
+[ 24% 290/1167] regenerate globs shard 289 of 1024
+[ 24% 291/1167] regenerate globs shard 290 of 1024
+[ 25% 292/1167] regenerate globs shard 291 of 1024
+[ 25% 293/1167] regenerate globs shard 292 of 1024
+[ 25% 294/1167] regenerate globs shard 293 of 1024
+[ 25% 295/1167] regenerate globs shard 294 of 1024
+[ 25% 296/1167] regenerate globs shard 295 of 1024
+[ 25% 297/1167] regenerate globs shard 296 of 1024
+[ 25% 298/1167] regenerate globs shard 297 of 1024
+[ 25% 299/1167] regenerate globs shard 298 of 1024
+[ 25% 300/1167] regenerate globs shard 299 of 1024
+[ 25% 301/1167] regenerate globs shard 300 of 1024
+[ 25% 302/1167] regenerate globs shard 301 of 1024
+[ 25% 303/1167] regenerate globs shard 302 of 1024
+[ 26% 304/1167] regenerate globs shard 303 of 1024
+[ 26% 305/1167] regenerate globs shard 304 of 1024
+[ 26% 306/1167] regenerate globs shard 305 of 1024
+[ 26% 307/1167] regenerate globs shard 306 of 1024
+[ 26% 308/1167] regenerate globs shard 307 of 1024
+[ 26% 309/1167] regenerate globs shard 308 of 1024
+[ 26% 310/1167] regenerate globs shard 309 of 1024
+[ 26% 311/1167] regenerate globs shard 310 of 1024
+[ 26% 312/1167] regenerate globs shard 312 of 1024
+[ 26% 313/1167] regenerate globs shard 311 of 1024
+[ 26% 314/1167] regenerate globs shard 313 of 1024
+[ 26% 315/1167] regenerate globs shard 314 of 1024
+[ 27% 316/1167] regenerate globs shard 315 of 1024
+[ 27% 317/1167] regenerate globs shard 316 of 1024
+[ 27% 318/1167] regenerate globs shard 317 of 1024
+[ 27% 319/1167] regenerate globs shard 318 of 1024
+[ 27% 320/1167] regenerate globs shard 319 of 1024
+[ 27% 321/1167] regenerate globs shard 321 of 1024
+[ 27% 322/1167] regenerate globs shard 320 of 1024
+[ 27% 323/1167] regenerate globs shard 322 of 1024
+[ 27% 324/1167] regenerate globs shard 323 of 1024
+[ 27% 325/1167] regenerate globs shard 324 of 1024
+[ 27% 326/1167] regenerate globs shard 325 of 1024
+[ 28% 327/1167] regenerate globs shard 326 of 1024
+[ 28% 328/1167] regenerate globs shard 327 of 1024
+[ 28% 329/1167] regenerate globs shard 328 of 1024
+[ 28% 330/1167] regenerate globs shard 329 of 1024
+[ 28% 331/1167] regenerate globs shard 330 of 1024
+[ 28% 332/1167] regenerate globs shard 331 of 1024
+[ 28% 333/1167] regenerate globs shard 332 of 1024
+[ 28% 334/1167] regenerate globs shard 333 of 1024
+[ 28% 335/1167] regenerate globs shard 334 of 1024
+[ 28% 336/1167] regenerate globs shard 335 of 1024
+[ 28% 337/1167] regenerate globs shard 336 of 1024
+[ 28% 338/1167] regenerate globs shard 337 of 1024
+[ 29% 339/1167] regenerate globs shard 338 of 1024
+[ 29% 340/1167] regenerate globs shard 339 of 1024
+[ 29% 341/1167] regenerate globs shard 340 of 1024
+[ 29% 342/1167] regenerate globs shard 341 of 1024
+[ 29% 343/1167] regenerate globs shard 343 of 1024
+[ 29% 344/1167] regenerate globs shard 342 of 1024
+[ 29% 345/1167] regenerate globs shard 344 of 1024
+[ 29% 346/1167] regenerate globs shard 345 of 1024
+[ 29% 347/1167] regenerate globs shard 346 of 1024
+[ 29% 348/1167] regenerate globs shard 347 of 1024
+[ 29% 349/1167] regenerate globs shard 348 of 1024
+[ 29% 350/1167] regenerate globs shard 349 of 1024
+[ 30% 351/1167] regenerate globs shard 351 of 1024
+[ 30% 352/1167] regenerate globs shard 350 of 1024
+[ 30% 353/1167] regenerate globs shard 352 of 1024
+[ 30% 354/1167] regenerate globs shard 353 of 1024
+[ 30% 355/1167] regenerate globs shard 354 of 1024
+[ 30% 356/1167] regenerate globs shard 355 of 1024
+[ 30% 357/1167] regenerate globs shard 357 of 1024
+[ 30% 358/1167] regenerate globs shard 356 of 1024
+[ 30% 359/1167] regenerate globs shard 358 of 1024
+[ 30% 360/1167] regenerate globs shard 359 of 1024
+[ 30% 361/1167] regenerate globs shard 360 of 1024
+[ 31% 362/1167] regenerate globs shard 361 of 1024
+[ 31% 363/1167] regenerate globs shard 362 of 1024
+[ 31% 364/1167] regenerate globs shard 363 of 1024
+[ 31% 365/1167] regenerate globs shard 364 of 1024
+[ 31% 366/1167] regenerate globs shard 365 of 1024
+[ 31% 367/1167] regenerate globs shard 366 of 1024
+[ 31% 368/1167] regenerate globs shard 367 of 1024
+[ 31% 369/1167] regenerate globs shard 368 of 1024
+[ 31% 370/1167] regenerate globs shard 369 of 1024
+[ 31% 371/1167] regenerate globs shard 370 of 1024
+[ 31% 372/1167] regenerate globs shard 371 of 1024
+[ 31% 373/1167] regenerate globs shard 372 of 1024
+[ 32% 374/1167] regenerate globs shard 373 of 1024
+[ 32% 375/1167] regenerate globs shard 374 of 1024
+[ 32% 376/1167] regenerate globs shard 375 of 1024
+[ 32% 377/1167] regenerate globs shard 377 of 1024
+[ 32% 378/1167] regenerate globs shard 378 of 1024
+[ 32% 379/1167] regenerate globs shard 376 of 1024
+[ 32% 380/1167] regenerate globs shard 379 of 1024
+[ 32% 381/1167] regenerate globs shard 380 of 1024
+[ 32% 382/1167] regenerate globs shard 381 of 1024
+[ 32% 383/1167] regenerate globs shard 382 of 1024
+[ 32% 384/1167] regenerate globs shard 383 of 1024
+[ 32% 385/1167] regenerate globs shard 384 of 1024
+[ 33% 386/1167] regenerate globs shard 385 of 1024
+[ 33% 387/1167] regenerate globs shard 386 of 1024
+[ 33% 388/1167] regenerate globs shard 387 of 1024
+[ 33% 389/1167] regenerate globs shard 388 of 1024
+[ 33% 390/1167] regenerate globs shard 389 of 1024
+[ 33% 391/1167] regenerate globs shard 391 of 1024
+[ 33% 392/1167] regenerate globs shard 390 of 1024
+[ 33% 393/1167] regenerate globs shard 392 of 1024
+[ 33% 394/1167] regenerate globs shard 393 of 1024
+[ 33% 395/1167] regenerate globs shard 394 of 1024
+[ 33% 396/1167] regenerate globs shard 395 of 1024
+[ 34% 397/1167] regenerate globs shard 396 of 1024
+[ 34% 398/1167] regenerate globs shard 397 of 1024
+[ 34% 399/1167] regenerate globs shard 398 of 1024
+[ 34% 400/1167] regenerate globs shard 399 of 1024
+[ 34% 401/1167] regenerate globs shard 400 of 1024
+[ 34% 402/1167] regenerate globs shard 401 of 1024
+[ 34% 403/1167] regenerate globs shard 402 of 1024
+[ 34% 404/1167] regenerate globs shard 403 of 1024
+[ 34% 405/1167] regenerate globs shard 404 of 1024
+[ 34% 406/1167] regenerate globs shard 405 of 1024
+[ 34% 407/1167] regenerate globs shard 406 of 1024
+[ 34% 408/1167] regenerate globs shard 407 of 1024
+[ 35% 409/1167] regenerate globs shard 408 of 1024
+[ 35% 410/1167] regenerate globs shard 409 of 1024
+[ 35% 411/1167] regenerate globs shard 410 of 1024
+[ 35% 412/1167] regenerate globs shard 411 of 1024
+[ 35% 413/1167] regenerate globs shard 413 of 1024
+[ 35% 414/1167] regenerate globs shard 412 of 1024
+[ 35% 415/1167] regenerate globs shard 414 of 1024
+[ 35% 416/1167] regenerate globs shard 415 of 1024
+[ 35% 417/1167] regenerate globs shard 416 of 1024
+[ 35% 418/1167] regenerate globs shard 417 of 1024
+[ 35% 419/1167] regenerate globs shard 418 of 1024
+[ 35% 420/1167] regenerate globs shard 421 of 1024
+[ 36% 421/1167] regenerate globs shard 420 of 1024
+[ 36% 422/1167] regenerate globs shard 419 of 1024
+[ 36% 423/1167] regenerate globs shard 422 of 1024
+[ 36% 424/1167] regenerate globs shard 423 of 1024
+[ 36% 425/1167] regenerate globs shard 424 of 1024
+[ 36% 426/1167] regenerate globs shard 425 of 1024
+[ 36% 427/1167] regenerate globs shard 426 of 1024
+[ 36% 428/1167] regenerate globs shard 427 of 1024
+[ 36% 429/1167] regenerate globs shard 428 of 1024
+[ 36% 430/1167] regenerate globs shard 429 of 1024
+[ 36% 431/1167] regenerate globs shard 430 of 1024
+[ 37% 432/1167] regenerate globs shard 431 of 1024
+[ 37% 433/1167] regenerate globs shard 432 of 1024
+[ 37% 434/1167] regenerate globs shard 433 of 1024
+[ 37% 435/1167] regenerate globs shard 435 of 1024
+[ 37% 436/1167] regenerate globs shard 437 of 1024
+[ 37% 437/1167] regenerate globs shard 434 of 1024
+[ 37% 438/1167] regenerate globs shard 436 of 1024
+[ 37% 439/1167] regenerate globs shard 438 of 1024
+[ 37% 440/1167] regenerate globs shard 439 of 1024
+[ 37% 441/1167] regenerate globs shard 441 of 1024
+[ 37% 442/1167] regenerate globs shard 440 of 1024
+[ 37% 443/1167] regenerate globs shard 442 of 1024
+[ 38% 444/1167] regenerate globs shard 443 of 1024
+[ 38% 445/1167] regenerate globs shard 444 of 1024
+[ 38% 446/1167] regenerate globs shard 445 of 1024
+[ 38% 447/1167] regenerate globs shard 446 of 1024
+[ 38% 448/1167] regenerate globs shard 447 of 1024
+[ 38% 449/1167] regenerate globs shard 448 of 1024
+[ 38% 450/1167] regenerate globs shard 449 of 1024
+[ 38% 451/1167] regenerate globs shard 450 of 1024
+[ 38% 452/1167] regenerate globs shard 451 of 1024
+[ 38% 453/1167] regenerate globs shard 452 of 1024
+[ 38% 454/1167] regenerate globs shard 453 of 1024
+[ 38% 455/1167] regenerate globs shard 454 of 1024
+[ 39% 456/1167] regenerate globs shard 455 of 1024
+[ 39% 457/1167] regenerate globs shard 456 of 1024
+[ 39% 458/1167] regenerate globs shard 457 of 1024
+[ 39% 459/1167] regenerate globs shard 458 of 1024
+[ 39% 460/1167] regenerate globs shard 460 of 1024
+[ 39% 461/1167] regenerate globs shard 459 of 1024
+[ 39% 462/1167] regenerate globs shard 462 of 1024
+[ 39% 463/1167] regenerate globs shard 463 of 1024
+[ 39% 464/1167] regenerate globs shard 464 of 1024
+[ 39% 465/1167] regenerate globs shard 465 of 1024
+[ 39% 466/1167] regenerate globs shard 461 of 1024
+[ 40% 467/1167] regenerate globs shard 466 of 1024
+[ 40% 468/1167] regenerate globs shard 467 of 1024
+[ 40% 469/1167] regenerate globs shard 468 of 1024
+[ 40% 470/1167] regenerate globs shard 469 of 1024
+[ 40% 471/1167] regenerate globs shard 470 of 1024
+[ 40% 472/1167] regenerate globs shard 471 of 1024
+[ 40% 473/1167] regenerate globs shard 472 of 1024
+[ 40% 474/1167] regenerate globs shard 473 of 1024
+[ 40% 475/1167] regenerate globs shard 474 of 1024
+[ 40% 476/1167] regenerate globs shard 475 of 1024
+[ 40% 477/1167] regenerate globs shard 476 of 1024
+[ 40% 478/1167] regenerate globs shard 477 of 1024
+[ 41% 479/1167] regenerate globs shard 478 of 1024
+[ 41% 480/1167] regenerate globs shard 479 of 1024
+[ 41% 481/1167] regenerate globs shard 480 of 1024
+[ 41% 482/1167] regenerate globs shard 481 of 1024
+[ 41% 483/1167] regenerate globs shard 483 of 1024
+[ 41% 484/1167] regenerate globs shard 482 of 1024
+[ 41% 485/1167] regenerate globs shard 484 of 1024
+[ 41% 486/1167] regenerate globs shard 485 of 1024
+[ 41% 487/1167] regenerate globs shard 486 of 1024
+[ 41% 488/1167] regenerate globs shard 487 of 1024
+[ 41% 489/1167] regenerate globs shard 488 of 1024
+[ 41% 490/1167] regenerate globs shard 489 of 1024
+[ 42% 491/1167] regenerate globs shard 490 of 1024
+[ 42% 492/1167] regenerate globs shard 491 of 1024
+[ 42% 493/1167] regenerate globs shard 492 of 1024
+[ 42% 494/1167] regenerate globs shard 493 of 1024
+[ 42% 495/1167] regenerate globs shard 494 of 1024
+[ 42% 496/1167] regenerate globs shard 495 of 1024
+[ 42% 497/1167] regenerate globs shard 496 of 1024
+[ 42% 498/1167] regenerate globs shard 497 of 1024
+[ 42% 499/1167] regenerate globs shard 498 of 1024
+[ 42% 500/1167] regenerate globs shard 499 of 1024
+[ 42% 501/1167] regenerate globs shard 500 of 1024
+[ 43% 502/1167] regenerate globs shard 501 of 1024
+[ 43% 503/1167] regenerate globs shard 502 of 1024
+[ 43% 504/1167] regenerate globs shard 503 of 1024
+[ 43% 505/1167] regenerate globs shard 504 of 1024
+[ 43% 506/1167] regenerate globs shard 505 of 1024
+[ 43% 507/1167] regenerate globs shard 506 of 1024
+[ 43% 508/1167] regenerate globs shard 507 of 1024
+[ 43% 509/1167] regenerate globs shard 508 of 1024
+[ 43% 510/1167] regenerate globs shard 509 of 1024
+[ 43% 511/1167] regenerate globs shard 510 of 1024
+[ 43% 512/1167] regenerate globs shard 511 of 1024
+[ 43% 513/1167] regenerate globs shard 513 of 1024
+[ 44% 514/1167] regenerate globs shard 512 of 1024
+[ 44% 515/1167] regenerate globs shard 514 of 1024
+[ 44% 516/1167] regenerate globs shard 515 of 1024
+[ 44% 517/1167] regenerate globs shard 516 of 1024
+[ 44% 518/1167] regenerate globs shard 517 of 1024
+[ 44% 519/1167] regenerate globs shard 518 of 1024
+[ 44% 520/1167] regenerate globs shard 519 of 1024
+[ 44% 521/1167] regenerate globs shard 520 of 1024
+[ 44% 522/1167] regenerate globs shard 521 of 1024
+[ 44% 523/1167] regenerate globs shard 522 of 1024
+[ 44% 524/1167] regenerate globs shard 523 of 1024
+[ 44% 525/1167] regenerate globs shard 524 of 1024
+[ 45% 526/1167] regenerate globs shard 525 of 1024
+[ 45% 527/1167] regenerate globs shard 526 of 1024
+[ 45% 528/1167] regenerate globs shard 527 of 1024
+[ 45% 529/1167] regenerate globs shard 528 of 1024
+[ 45% 530/1167] regenerate globs shard 529 of 1024
+[ 45% 531/1167] regenerate globs shard 530 of 1024
+[ 45% 532/1167] regenerate globs shard 531 of 1024
+[ 45% 533/1167] regenerate globs shard 532 of 1024
+[ 45% 534/1167] regenerate globs shard 534 of 1024
+[ 45% 535/1167] regenerate globs shard 533 of 1024
+[ 45% 536/1167] regenerate globs shard 535 of 1024
+[ 46% 537/1167] regenerate globs shard 536 of 1024
+[ 46% 538/1167] regenerate globs shard 537 of 1024
+[ 46% 539/1167] regenerate globs shard 538 of 1024
+[ 46% 540/1167] regenerate globs shard 540 of 1024
+[ 46% 541/1167] regenerate globs shard 539 of 1024
+[ 46% 542/1167] regenerate globs shard 541 of 1024
+[ 46% 543/1167] regenerate globs shard 542 of 1024
+[ 46% 544/1167] regenerate globs shard 543 of 1024
+[ 46% 545/1167] regenerate globs shard 544 of 1024
+[ 46% 546/1167] regenerate globs shard 545 of 1024
+[ 46% 547/1167] regenerate globs shard 546 of 1024
+[ 46% 548/1167] regenerate globs shard 547 of 1024
+[ 47% 549/1167] regenerate globs shard 548 of 1024
+[ 47% 550/1167] regenerate globs shard 549 of 1024
+[ 47% 551/1167] regenerate globs shard 550 of 1024
+[ 47% 552/1167] regenerate globs shard 551 of 1024
+[ 47% 553/1167] regenerate globs shard 552 of 1024
+[ 47% 554/1167] regenerate globs shard 553 of 1024
+[ 47% 555/1167] regenerate globs shard 554 of 1024
+[ 47% 556/1167] regenerate globs shard 555 of 1024
+[ 47% 557/1167] regenerate globs shard 556 of 1024
+[ 47% 558/1167] regenerate globs shard 557 of 1024
+[ 47% 559/1167] regenerate globs shard 558 of 1024
+[ 47% 560/1167] regenerate globs shard 559 of 1024
+[ 48% 561/1167] regenerate globs shard 560 of 1024
+[ 48% 562/1167] regenerate globs shard 561 of 1024
+[ 48% 563/1167] regenerate globs shard 562 of 1024
+[ 48% 564/1167] regenerate globs shard 563 of 1024
+[ 48% 565/1167] regenerate globs shard 564 of 1024
+[ 48% 566/1167] regenerate globs shard 565 of 1024
+[ 48% 567/1167] regenerate globs shard 566 of 1024
+[ 48% 568/1167] regenerate globs shard 567 of 1024
+[ 48% 569/1167] regenerate globs shard 568 of 1024
+[ 48% 570/1167] regenerate globs shard 569 of 1024
+[ 48% 571/1167] regenerate globs shard 570 of 1024
+[ 49% 572/1167] regenerate globs shard 571 of 1024
+[ 49% 573/1167] regenerate globs shard 572 of 1024
+[ 49% 574/1167] regenerate globs shard 574 of 1024
+[ 49% 575/1167] regenerate globs shard 575 of 1024
+[ 49% 576/1167] regenerate globs shard 573 of 1024
+[ 49% 577/1167] regenerate globs shard 577 of 1024
+[ 49% 578/1167] regenerate globs shard 576 of 1024
+[ 49% 579/1167] regenerate globs shard 578 of 1024
+[ 49% 580/1167] regenerate globs shard 579 of 1024
+[ 49% 581/1167] regenerate globs shard 580 of 1024
+[ 49% 582/1167] regenerate globs shard 581 of 1024
+[ 49% 583/1167] regenerate globs shard 582 of 1024
+[ 50% 584/1167] regenerate globs shard 583 of 1024
+[ 50% 585/1167] regenerate globs shard 584 of 1024
+[ 50% 586/1167] regenerate globs shard 585 of 1024
+[ 50% 587/1167] regenerate globs shard 586 of 1024
+[ 50% 588/1167] regenerate globs shard 587 of 1024
+[ 50% 589/1167] regenerate globs shard 588 of 1024
+[ 50% 590/1167] regenerate globs shard 589 of 1024
+[ 50% 591/1167] regenerate globs shard 590 of 1024
+[ 50% 592/1167] regenerate globs shard 591 of 1024
+[ 50% 593/1167] regenerate globs shard 592 of 1024
+[ 50% 594/1167] regenerate globs shard 594 of 1024
+[ 50% 595/1167] regenerate globs shard 595 of 1024
+[ 51% 596/1167] regenerate globs shard 596 of 1024
+[ 51% 597/1167] regenerate globs shard 593 of 1024
+[ 51% 598/1167] regenerate globs shard 597 of 1024
+[ 51% 599/1167] regenerate globs shard 598 of 1024
+[ 51% 600/1167] regenerate globs shard 599 of 1024
+[ 51% 601/1167] regenerate globs shard 600 of 1024
+[ 51% 602/1167] regenerate globs shard 601 of 1024
+[ 51% 603/1167] regenerate globs shard 602 of 1024
+[ 51% 604/1167] regenerate globs shard 603 of 1024
+[ 51% 605/1167] regenerate globs shard 604 of 1024
+[ 51% 606/1167] regenerate globs shard 605 of 1024
+[ 52% 607/1167] regenerate globs shard 606 of 1024
+[ 52% 608/1167] regenerate globs shard 607 of 1024
+[ 52% 609/1167] regenerate globs shard 608 of 1024
+[ 52% 610/1167] regenerate globs shard 609 of 1024
+[ 52% 611/1167] regenerate globs shard 610 of 1024
+[ 52% 612/1167] regenerate globs shard 611 of 1024
+[ 52% 613/1167] regenerate globs shard 612 of 1024
+[ 52% 614/1167] regenerate globs shard 613 of 1024
+[ 52% 615/1167] regenerate globs shard 614 of 1024
+[ 52% 616/1167] regenerate globs shard 615 of 1024
+[ 52% 617/1167] regenerate globs shard 616 of 1024
+[ 52% 618/1167] regenerate globs shard 617 of 1024
+[ 53% 619/1167] regenerate globs shard 618 of 1024
+[ 53% 620/1167] regenerate globs shard 619 of 1024
+[ 53% 621/1167] regenerate globs shard 620 of 1024
+[ 53% 622/1167] regenerate globs shard 621 of 1024
+[ 53% 623/1167] regenerate globs shard 622 of 1024
+[ 53% 624/1167] regenerate globs shard 623 of 1024
+[ 53% 625/1167] regenerate globs shard 624 of 1024
+[ 53% 626/1167] regenerate globs shard 625 of 1024
+[ 53% 627/1167] regenerate globs shard 626 of 1024
+[ 53% 628/1167] regenerate globs shard 627 of 1024
+[ 53% 629/1167] regenerate globs shard 628 of 1024
+[ 53% 630/1167] regenerate globs shard 630 of 1024
+[ 54% 631/1167] regenerate globs shard 629 of 1024
+[ 54% 632/1167] regenerate globs shard 631 of 1024
+[ 54% 633/1167] regenerate globs shard 632 of 1024
+[ 54% 634/1167] regenerate globs shard 633 of 1024
+[ 54% 635/1167] regenerate globs shard 634 of 1024
+[ 54% 636/1167] regenerate globs shard 635 of 1024
+[ 54% 637/1167] regenerate globs shard 636 of 1024
+[ 54% 638/1167] regenerate globs shard 637 of 1024
+[ 54% 639/1167] regenerate globs shard 638 of 1024
+[ 54% 640/1167] regenerate globs shard 639 of 1024
+[ 54% 641/1167] regenerate globs shard 640 of 1024
+[ 55% 642/1167] regenerate globs shard 641 of 1024
+[ 55% 643/1167] regenerate globs shard 642 of 1024
+[ 55% 644/1167] regenerate globs shard 643 of 1024
+[ 55% 645/1167] regenerate globs shard 644 of 1024
+[ 55% 646/1167] regenerate globs shard 645 of 1024
+[ 55% 647/1167] regenerate globs shard 646 of 1024
+[ 55% 648/1167] regenerate globs shard 647 of 1024
+[ 55% 649/1167] regenerate globs shard 648 of 1024
+[ 55% 650/1167] regenerate globs shard 649 of 1024
+[ 55% 651/1167] regenerate globs shard 650 of 1024
+[ 55% 652/1167] regenerate globs shard 651 of 1024
+[ 55% 653/1167] regenerate globs shard 652 of 1024
+[ 56% 654/1167] regenerate globs shard 653 of 1024
+[ 56% 655/1167] regenerate globs shard 654 of 1024
+[ 56% 656/1167] regenerate globs shard 655 of 1024
+[ 56% 657/1167] regenerate globs shard 656 of 1024
+[ 56% 658/1167] regenerate globs shard 657 of 1024
+[ 56% 659/1167] regenerate globs shard 658 of 1024
+[ 56% 660/1167] regenerate globs shard 659 of 1024
+[ 56% 661/1167] regenerate globs shard 660 of 1024
+[ 56% 662/1167] regenerate globs shard 661 of 1024
+[ 56% 663/1167] regenerate globs shard 662 of 1024
+[ 56% 664/1167] regenerate globs shard 663 of 1024
+[ 56% 665/1167] regenerate globs shard 664 of 1024
+[ 57% 666/1167] regenerate globs shard 665 of 1024
+[ 57% 667/1167] regenerate globs shard 666 of 1024
+[ 57% 668/1167] regenerate globs shard 667 of 1024
+[ 57% 669/1167] regenerate globs shard 668 of 1024
+[ 57% 670/1167] regenerate globs shard 669 of 1024
+[ 57% 671/1167] regenerate globs shard 670 of 1024
+[ 57% 672/1167] regenerate globs shard 671 of 1024
+[ 57% 673/1167] regenerate globs shard 672 of 1024
+[ 57% 674/1167] regenerate globs shard 673 of 1024
+[ 57% 675/1167] regenerate globs shard 674 of 1024
+[ 57% 676/1167] regenerate globs shard 675 of 1024
+[ 58% 677/1167] regenerate globs shard 676 of 1024
+[ 58% 678/1167] regenerate globs shard 677 of 1024
+[ 58% 679/1167] regenerate globs shard 678 of 1024
+[ 58% 680/1167] regenerate globs shard 679 of 1024
+[ 58% 681/1167] regenerate globs shard 680 of 1024
+[ 58% 682/1167] regenerate globs shard 681 of 1024
+[ 58% 683/1167] regenerate globs shard 682 of 1024
+[ 58% 684/1167] regenerate globs shard 683 of 1024
+[ 58% 685/1167] regenerate globs shard 684 of 1024
+[ 58% 686/1167] regenerate globs shard 685 of 1024
+[ 58% 687/1167] regenerate globs shard 686 of 1024
+[ 58% 688/1167] regenerate globs shard 687 of 1024
+[ 59% 689/1167] regenerate globs shard 688 of 1024
+[ 59% 690/1167] regenerate globs shard 689 of 1024
+[ 59% 691/1167] regenerate globs shard 690 of 1024
+[ 59% 692/1167] regenerate globs shard 691 of 1024
+[ 59% 693/1167] regenerate globs shard 692 of 1024
+[ 59% 694/1167] regenerate globs shard 693 of 1024
+[ 59% 695/1167] regenerate globs shard 694 of 1024
+[ 59% 696/1167] regenerate globs shard 695 of 1024
+[ 59% 697/1167] regenerate globs shard 696 of 1024
+[ 59% 698/1167] regenerate globs shard 697 of 1024
+[ 59% 699/1167] regenerate globs shard 698 of 1024
+[ 59% 700/1167] regenerate globs shard 699 of 1024
+[ 60% 701/1167] regenerate globs shard 700 of 1024
+[ 60% 702/1167] regenerate globs shard 701 of 1024
+[ 60% 703/1167] regenerate globs shard 702 of 1024
+[ 60% 704/1167] regenerate globs shard 703 of 1024
+[ 60% 705/1167] regenerate globs shard 704 of 1024
+[ 60% 706/1167] regenerate globs shard 705 of 1024
+[ 60% 707/1167] regenerate globs shard 706 of 1024
+[ 60% 708/1167] regenerate globs shard 707 of 1024
+[ 60% 709/1167] regenerate globs shard 708 of 1024
+[ 60% 710/1167] regenerate globs shard 709 of 1024
+[ 60% 711/1167] regenerate globs shard 710 of 1024
+[ 61% 712/1167] regenerate globs shard 711 of 1024
+[ 61% 713/1167] regenerate globs shard 712 of 1024
+[ 61% 714/1167] regenerate globs shard 713 of 1024
+[ 61% 715/1167] regenerate globs shard 714 of 1024
+[ 61% 716/1167] regenerate globs shard 715 of 1024
+[ 61% 717/1167] regenerate globs shard 716 of 1024
+[ 61% 718/1167] regenerate globs shard 717 of 1024
+[ 61% 719/1167] regenerate globs shard 718 of 1024
+[ 61% 720/1167] regenerate globs shard 719 of 1024
+[ 61% 721/1167] regenerate globs shard 720 of 1024
+[ 61% 722/1167] regenerate globs shard 721 of 1024
+[ 61% 723/1167] regenerate globs shard 722 of 1024
+[ 62% 724/1167] regenerate globs shard 723 of 1024
+[ 62% 725/1167] regenerate globs shard 724 of 1024
+[ 62% 726/1167] regenerate globs shard 725 of 1024
+[ 62% 727/1167] regenerate globs shard 726 of 1024
+[ 62% 728/1167] regenerate globs shard 727 of 1024
+[ 62% 729/1167] regenerate globs shard 728 of 1024
+[ 62% 730/1167] regenerate globs shard 729 of 1024
+[ 62% 731/1167] regenerate globs shard 730 of 1024
+[ 62% 732/1167] regenerate globs shard 731 of 1024
+[ 62% 733/1167] regenerate globs shard 732 of 1024
+[ 62% 734/1167] regenerate globs shard 733 of 1024
+[ 62% 735/1167] regenerate globs shard 734 of 1024
+[ 63% 736/1167] regenerate globs shard 735 of 1024
+[ 63% 737/1167] regenerate globs shard 736 of 1024
+[ 63% 738/1167] regenerate globs shard 737 of 1024
+[ 63% 739/1167] regenerate globs shard 738 of 1024
+[ 63% 740/1167] regenerate globs shard 739 of 1024
+[ 63% 741/1167] regenerate globs shard 740 of 1024
+[ 63% 742/1167] regenerate globs shard 741 of 1024
+[ 63% 743/1167] regenerate globs shard 742 of 1024
+[ 63% 744/1167] regenerate globs shard 743 of 1024
+[ 63% 745/1167] regenerate globs shard 744 of 1024
+[ 63% 746/1167] regenerate globs shard 745 of 1024
+[ 64% 747/1167] regenerate globs shard 746 of 1024
+[ 64% 748/1167] regenerate globs shard 747 of 1024
+[ 64% 749/1167] regenerate globs shard 748 of 1024
+[ 64% 750/1167] regenerate globs shard 749 of 1024
+[ 64% 751/1167] regenerate globs shard 750 of 1024
+[ 64% 752/1167] regenerate globs shard 751 of 1024
+[ 64% 753/1167] regenerate globs shard 752 of 1024
+[ 64% 754/1167] regenerate globs shard 753 of 1024
+[ 64% 755/1167] regenerate globs shard 754 of 1024
+[ 64% 756/1167] regenerate globs shard 755 of 1024
+[ 64% 757/1167] regenerate globs shard 756 of 1024
+[ 64% 758/1167] regenerate globs shard 757 of 1024
+[ 65% 759/1167] regenerate globs shard 758 of 1024
+[ 65% 760/1167] regenerate globs shard 759 of 1024
+[ 65% 761/1167] regenerate globs shard 760 of 1024
+[ 65% 762/1167] regenerate globs shard 761 of 1024
+[ 65% 763/1167] regenerate globs shard 762 of 1024
+[ 65% 764/1167] regenerate globs shard 763 of 1024
+[ 65% 765/1167] regenerate globs shard 764 of 1024
+[ 65% 766/1167] regenerate globs shard 765 of 1024
+[ 65% 767/1167] regenerate globs shard 766 of 1024
+[ 65% 768/1167] regenerate globs shard 767 of 1024
+[ 65% 769/1167] regenerate globs shard 768 of 1024
+[ 65% 770/1167] regenerate globs shard 769 of 1024
+[ 66% 771/1167] regenerate globs shard 770 of 1024
+[ 66% 772/1167] regenerate globs shard 771 of 1024
+[ 66% 773/1167] regenerate globs shard 772 of 1024
+[ 66% 774/1167] regenerate globs shard 773 of 1024
+[ 66% 775/1167] regenerate globs shard 774 of 1024
+[ 66% 776/1167] regenerate globs shard 775 of 1024
+[ 66% 777/1167] regenerate globs shard 776 of 1024
+[ 66% 778/1167] regenerate globs shard 777 of 1024
+[ 66% 779/1167] regenerate globs shard 778 of 1024
+[ 66% 780/1167] regenerate globs shard 779 of 1024
+[ 66% 781/1167] regenerate globs shard 780 of 1024
+[ 67% 782/1167] regenerate globs shard 781 of 1024
+[ 67% 783/1167] regenerate globs shard 782 of 1024
+[ 67% 784/1167] regenerate globs shard 783 of 1024
+[ 67% 785/1167] regenerate globs shard 784 of 1024
+[ 67% 786/1167] regenerate globs shard 785 of 1024
+[ 67% 787/1167] regenerate globs shard 786 of 1024
+[ 67% 788/1167] regenerate globs shard 787 of 1024
+[ 67% 789/1167] regenerate globs shard 788 of 1024
+[ 67% 790/1167] regenerate globs shard 789 of 1024
+[ 67% 791/1167] regenerate globs shard 790 of 1024
+[ 67% 792/1167] regenerate globs shard 791 of 1024
+[ 67% 793/1167] regenerate globs shard 792 of 1024
+[ 68% 794/1167] regenerate globs shard 793 of 1024
+[ 68% 795/1167] regenerate globs shard 794 of 1024
+[ 68% 796/1167] regenerate globs shard 795 of 1024
+[ 68% 797/1167] regenerate globs shard 796 of 1024
+[ 68% 798/1167] regenerate globs shard 797 of 1024
+[ 68% 799/1167] regenerate globs shard 798 of 1024
+[ 68% 800/1167] regenerate globs shard 799 of 1024
+[ 68% 801/1167] regenerate globs shard 800 of 1024
+[ 68% 802/1167] regenerate globs shard 801 of 1024
+[ 68% 803/1167] regenerate globs shard 802 of 1024
+[ 68% 804/1167] regenerate globs shard 803 of 1024
+[ 68% 805/1167] regenerate globs shard 804 of 1024
+[ 69% 806/1167] regenerate globs shard 805 of 1024
+[ 69% 807/1167] regenerate globs shard 806 of 1024
+[ 69% 808/1167] regenerate globs shard 809 of 1024
+[ 69% 809/1167] regenerate globs shard 807 of 1024
+[ 69% 810/1167] regenerate globs shard 808 of 1024
+[ 69% 811/1167] regenerate globs shard 810 of 1024
+[ 69% 812/1167] regenerate globs shard 811 of 1024
+[ 69% 813/1167] regenerate globs shard 812 of 1024
+[ 69% 814/1167] regenerate globs shard 813 of 1024
+[ 69% 815/1167] regenerate globs shard 814 of 1024
+[ 69% 816/1167] regenerate globs shard 815 of 1024
+[ 70% 817/1167] regenerate globs shard 816 of 1024
+[ 70% 818/1167] regenerate globs shard 817 of 1024
+[ 70% 819/1167] regenerate globs shard 818 of 1024
+[ 70% 820/1167] regenerate globs shard 819 of 1024
+[ 70% 821/1167] regenerate globs shard 820 of 1024
+[ 70% 822/1167] regenerate globs shard 821 of 1024
+[ 70% 823/1167] regenerate globs shard 822 of 1024
+[ 70% 824/1167] regenerate globs shard 823 of 1024
+[ 70% 825/1167] regenerate globs shard 824 of 1024
+[ 70% 826/1167] regenerate globs shard 825 of 1024
+[ 70% 827/1167] regenerate globs shard 826 of 1024
+[ 70% 828/1167] regenerate globs shard 827 of 1024
+[ 71% 829/1167] regenerate globs shard 828 of 1024
+[ 71% 830/1167] regenerate globs shard 829 of 1024
+[ 71% 831/1167] regenerate globs shard 830 of 1024
+[ 71% 832/1167] regenerate globs shard 831 of 1024
+[ 71% 833/1167] regenerate globs shard 832 of 1024
+[ 71% 834/1167] regenerate globs shard 833 of 1024
+[ 71% 835/1167] regenerate globs shard 834 of 1024
+[ 71% 836/1167] regenerate globs shard 835 of 1024
+[ 71% 837/1167] regenerate globs shard 836 of 1024
+[ 71% 838/1167] regenerate globs shard 837 of 1024
+[ 71% 839/1167] regenerate globs shard 838 of 1024
+[ 71% 840/1167] regenerate globs shard 839 of 1024
+[ 72% 841/1167] regenerate globs shard 840 of 1024
+[ 72% 842/1167] regenerate globs shard 841 of 1024
+[ 72% 843/1167] regenerate globs shard 842 of 1024
+[ 72% 844/1167] regenerate globs shard 843 of 1024
+[ 72% 845/1167] regenerate globs shard 844 of 1024
+[ 72% 846/1167] regenerate globs shard 845 of 1024
+[ 72% 847/1167] regenerate globs shard 846 of 1024
+[ 72% 848/1167] regenerate globs shard 847 of 1024
+[ 72% 849/1167] regenerate globs shard 848 of 1024
+[ 72% 850/1167] regenerate globs shard 849 of 1024
+[ 72% 851/1167] regenerate globs shard 850 of 1024
+[ 73% 852/1167] regenerate globs shard 851 of 1024
+[ 73% 853/1167] regenerate globs shard 852 of 1024
+[ 73% 854/1167] regenerate globs shard 853 of 1024
+[ 73% 855/1167] regenerate globs shard 854 of 1024
+[ 73% 856/1167] regenerate globs shard 855 of 1024
+[ 73% 857/1167] regenerate globs shard 856 of 1024
+[ 73% 858/1167] regenerate globs shard 857 of 1024
+[ 73% 859/1167] regenerate globs shard 858 of 1024
+[ 73% 860/1167] regenerate globs shard 859 of 1024
+[ 73% 861/1167] regenerate globs shard 860 of 1024
+[ 73% 862/1167] regenerate globs shard 861 of 1024
+[ 73% 863/1167] regenerate globs shard 862 of 1024
+[ 74% 864/1167] regenerate globs shard 863 of 1024
+[ 74% 865/1167] regenerate globs shard 864 of 1024
+[ 74% 866/1167] regenerate globs shard 865 of 1024
+[ 74% 867/1167] regenerate globs shard 866 of 1024
+[ 74% 868/1167] regenerate globs shard 867 of 1024
+[ 74% 869/1167] regenerate globs shard 868 of 1024
+[ 74% 870/1167] regenerate globs shard 869 of 1024
+[ 74% 871/1167] regenerate globs shard 870 of 1024
+[ 74% 872/1167] regenerate globs shard 871 of 1024
+[ 74% 873/1167] regenerate globs shard 872 of 1024
+[ 74% 874/1167] regenerate globs shard 873 of 1024
+[ 74% 875/1167] regenerate globs shard 874 of 1024
+[ 75% 876/1167] regenerate globs shard 875 of 1024
+[ 75% 877/1167] regenerate globs shard 876 of 1024
+[ 75% 878/1167] regenerate globs shard 877 of 1024
+[ 75% 879/1167] regenerate globs shard 878 of 1024
+[ 75% 880/1167] regenerate globs shard 879 of 1024
+[ 75% 881/1167] regenerate globs shard 880 of 1024
+[ 75% 882/1167] regenerate globs shard 881 of 1024
+[ 75% 883/1167] regenerate globs shard 882 of 1024
+[ 75% 884/1167] regenerate globs shard 883 of 1024
+[ 75% 885/1167] regenerate globs shard 884 of 1024
+[ 75% 886/1167] regenerate globs shard 885 of 1024
+[ 76% 887/1167] regenerate globs shard 886 of 1024
+[ 76% 888/1167] regenerate globs shard 887 of 1024
+[ 76% 889/1167] regenerate globs shard 888 of 1024
+[ 76% 890/1167] regenerate globs shard 889 of 1024
+[ 76% 891/1167] regenerate globs shard 890 of 1024
+[ 76% 892/1167] regenerate globs shard 891 of 1024
+[ 76% 893/1167] regenerate globs shard 892 of 1024
+[ 76% 894/1167] regenerate globs shard 893 of 1024
+[ 76% 895/1167] regenerate globs shard 894 of 1024
+[ 76% 896/1167] regenerate globs shard 895 of 1024
+[ 76% 897/1167] regenerate globs shard 896 of 1024
+[ 76% 898/1167] regenerate globs shard 897 of 1024
+[ 77% 899/1167] regenerate globs shard 898 of 1024
+[ 77% 900/1167] regenerate globs shard 899 of 1024
+[ 77% 901/1167] regenerate globs shard 900 of 1024
+[ 77% 902/1167] regenerate globs shard 901 of 1024
+[ 77% 903/1167] regenerate globs shard 902 of 1024
+[ 77% 904/1167] regenerate globs shard 903 of 1024
+[ 77% 905/1167] regenerate globs shard 904 of 1024
+[ 77% 906/1167] regenerate globs shard 905 of 1024
+[ 77% 907/1167] regenerate globs shard 906 of 1024
+[ 77% 908/1167] regenerate globs shard 907 of 1024
+[ 77% 909/1167] regenerate globs shard 908 of 1024
+[ 77% 910/1167] regenerate globs shard 909 of 1024
+[ 78% 911/1167] regenerate globs shard 910 of 1024
+[ 78% 912/1167] regenerate globs shard 911 of 1024
+[ 78% 913/1167] regenerate globs shard 912 of 1024
+[ 78% 914/1167] regenerate globs shard 913 of 1024
+[ 78% 915/1167] regenerate globs shard 914 of 1024
+[ 78% 916/1167] regenerate globs shard 916 of 1024
+[ 78% 917/1167] regenerate globs shard 915 of 1024
+[ 78% 918/1167] regenerate globs shard 917 of 1024
+[ 78% 919/1167] regenerate globs shard 918 of 1024
+[ 78% 920/1167] regenerate globs shard 919 of 1024
+[ 78% 921/1167] regenerate globs shard 920 of 1024
+[ 79% 922/1167] regenerate globs shard 921 of 1024
+[ 79% 923/1167] regenerate globs shard 922 of 1024
+[ 79% 924/1167] regenerate globs shard 923 of 1024
+[ 79% 925/1167] regenerate globs shard 924 of 1024
+[ 79% 926/1167] regenerate globs shard 925 of 1024
+[ 79% 927/1167] regenerate globs shard 926 of 1024
+[ 79% 928/1167] regenerate globs shard 927 of 1024
+[ 79% 929/1167] regenerate globs shard 928 of 1024
+[ 79% 930/1167] regenerate globs shard 929 of 1024
+[ 79% 931/1167] regenerate globs shard 930 of 1024
+[ 79% 932/1167] regenerate globs shard 931 of 1024
+[ 79% 933/1167] regenerate globs shard 932 of 1024
+[ 80% 934/1167] regenerate globs shard 933 of 1024
+[ 80% 935/1167] regenerate globs shard 934 of 1024
+[ 80% 936/1167] regenerate globs shard 935 of 1024
+[ 80% 937/1167] regenerate globs shard 936 of 1024
+[ 80% 938/1167] regenerate globs shard 937 of 1024
+[ 80% 939/1167] regenerate globs shard 938 of 1024
+[ 80% 940/1167] regenerate globs shard 939 of 1024
+[ 80% 941/1167] regenerate globs shard 940 of 1024
+[ 80% 942/1167] regenerate globs shard 941 of 1024
+[ 80% 943/1167] regenerate globs shard 942 of 1024
+[ 80% 944/1167] regenerate globs shard 943 of 1024
+[ 80% 945/1167] regenerate globs shard 944 of 1024
+[ 81% 946/1167] regenerate globs shard 945 of 1024
+[ 81% 947/1167] regenerate globs shard 946 of 1024
+[ 81% 948/1167] regenerate globs shard 947 of 1024
+[ 81% 949/1167] regenerate globs shard 948 of 1024
+[ 81% 950/1167] regenerate globs shard 949 of 1024
+[ 81% 951/1167] regenerate globs shard 950 of 1024
+[ 81% 952/1167] regenerate globs shard 951 of 1024
+[ 81% 953/1167] regenerate globs shard 952 of 1024
+[ 81% 954/1167] regenerate globs shard 953 of 1024
+[ 81% 955/1167] regenerate globs shard 954 of 1024
+[ 81% 956/1167] regenerate globs shard 955 of 1024
+[ 82% 957/1167] regenerate globs shard 956 of 1024
+[ 82% 958/1167] regenerate globs shard 957 of 1024
+[ 82% 959/1167] regenerate globs shard 958 of 1024
+[ 82% 960/1167] regenerate globs shard 959 of 1024
+[ 82% 961/1167] regenerate globs shard 960 of 1024
+[ 82% 962/1167] regenerate globs shard 961 of 1024
+[ 82% 963/1167] regenerate globs shard 962 of 1024
+[ 82% 964/1167] regenerate globs shard 963 of 1024
+[ 82% 965/1167] regenerate globs shard 964 of 1024
+[ 82% 966/1167] regenerate globs shard 965 of 1024
+[ 82% 967/1167] regenerate globs shard 966 of 1024
+[ 82% 968/1167] regenerate globs shard 967 of 1024
+[ 83% 969/1167] regenerate globs shard 968 of 1024
+[ 83% 970/1167] regenerate globs shard 969 of 1024
+[ 83% 971/1167] regenerate globs shard 970 of 1024
+[ 83% 972/1167] regenerate globs shard 971 of 1024
+[ 83% 973/1167] regenerate globs shard 972 of 1024
+[ 83% 974/1167] regenerate globs shard 973 of 1024
+[ 83% 975/1167] regenerate globs shard 974 of 1024
+[ 83% 976/1167] regenerate globs shard 975 of 1024
+[ 83% 977/1167] regenerate globs shard 976 of 1024
+[ 83% 978/1167] regenerate globs shard 977 of 1024
+[ 83% 979/1167] regenerate globs shard 978 of 1024
+[ 83% 980/1167] regenerate globs shard 979 of 1024
+[ 84% 981/1167] regenerate globs shard 980 of 1024
+[ 84% 982/1167] regenerate globs shard 981 of 1024
+[ 84% 983/1167] regenerate globs shard 982 of 1024
+[ 84% 984/1167] regenerate globs shard 983 of 1024
+[ 84% 985/1167] regenerate globs shard 984 of 1024
+[ 84% 986/1167] regenerate globs shard 985 of 1024
+[ 84% 987/1167] regenerate globs shard 986 of 1024
+[ 84% 988/1167] regenerate globs shard 987 of 1024
+[ 84% 989/1167] regenerate globs shard 988 of 1024
+[ 84% 990/1167] regenerate globs shard 989 of 1024
+[ 84% 991/1167] regenerate globs shard 990 of 1024
+[ 85% 992/1167] regenerate globs shard 991 of 1024
+[ 85% 993/1167] regenerate globs shard 992 of 1024
+[ 85% 994/1167] regenerate globs shard 993 of 1024
+[ 85% 995/1167] regenerate globs shard 994 of 1024
+[ 85% 996/1167] regenerate globs shard 995 of 1024
+[ 85% 997/1167] regenerate globs shard 996 of 1024
+[ 85% 998/1167] regenerate globs shard 997 of 1024
+[ 85% 999/1167] regenerate globs shard 998 of 1024
+[ 85% 1000/1167] regenerate globs shard 1000 of 1024
+[ 85% 1001/1167] regenerate globs shard 999 of 1024
+[ 85% 1002/1167] regenerate globs shard 1001 of 1024
+[ 85% 1003/1167] regenerate globs shard 1002 of 1024
+[ 86% 1004/1167] regenerate globs shard 1003 of 1024
+[ 86% 1005/1167] regenerate globs shard 1004 of 1024
+[ 86% 1006/1167] regenerate globs shard 1005 of 1024
+[ 86% 1007/1167] regenerate globs shard 1006 of 1024
+[ 86% 1008/1167] regenerate globs shard 1007 of 1024
+[ 86% 1009/1167] regenerate globs shard 1008 of 1024
+[ 86% 1010/1167] regenerate globs shard 1009 of 1024
+[ 86% 1011/1167] regenerate globs shard 1010 of 1024
+[ 86% 1012/1167] regenerate globs shard 1011 of 1024
+[ 86% 1013/1167] regenerate globs shard 1012 of 1024
+[ 86% 1014/1167] regenerate globs shard 1013 of 1024
+[ 86% 1015/1167] regenerate globs shard 1014 of 1024
+[ 87% 1016/1167] regenerate globs shard 1015 of 1024
+[ 87% 1017/1167] regenerate globs shard 1016 of 1024
+[ 87% 1018/1167] regenerate globs shard 1017 of 1024
+[ 87% 1019/1167] regenerate globs shard 1018 of 1024
+[ 87% 1020/1167] regenerate globs shard 1019 of 1024
+[ 87% 1021/1167] regenerate globs shard 1020 of 1024
+[ 87% 1022/1167] regenerate globs shard 1021 of 1024
+[ 87% 1023/1167] regenerate globs shard 1022 of 1024
+[ 87% 1024/1167] regenerate globs shard 1023 of 1024
+[ 87% 1025/1167] compile out/host/linux-x86/bin/go/blueprint-deptools/pkg/github.com/google/blueprint/deptools.a
+[ 87% 1026/1167] compile out/host/linux-x86/bin/go/blueprint-metrics/pkg/github.com/google/blueprint/metrics.a
+[ 88% 1027/1167] compile out/host/linux-x86/bin/go/go-cmp-internal-flags/pkg/github.com/google/go-cmp/cmp/internal/flags.a
+[ 88% 1028/1167] compile out/host/linux-x86/bin/go/go-starlark-internal-spell/pkg/go.starlark.net/internal/spell.a
+[ 88% 1029/1167] compile out/host/linux-x86/bin/go/go-cmp-internal-testprotos/pkg/github.com/google/go-cmp/cmp/internal/testprotos.a
+[ 88% 1030/1167] compile out/host/linux-x86/bin/go/androidmk-parser/pkg/android/soong/androidmk/parser.a
+[ 88% 1031/1167] compile out/host/linux-x86/bin/go/go-cmp-internal-value/pkg/github.com/google/go-cmp/cmp/internal/value.a
+[ 88% 1032/1167] compile out/host/linux-x86/bin/go/go-cmp-internal-diff/pkg/github.com/google/go-cmp/cmp/internal/diff.a
+[ 88% 1033/1167] compile out/host/linux-x86/bin/go/go-cmp-internal-function/pkg/github.com/google/go-cmp/cmp/internal/function.a
+[ 88% 1034/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-flags/pkg/google.golang.org/protobuf/internal/flags.a
+[ 88% 1035/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-detrand/pkg/google.golang.org/protobuf/internal/detrand.a
+[ 88% 1036/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-pragma/pkg/google.golang.org/protobuf/internal/pragma.a
+[ 88% 1037/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-set/pkg/google.golang.org/protobuf/internal/set.a
+[ 88% 1038/1167] compile out/host/linux-x86/bin/go/blueprint-parser/pkg/github.com/google/blueprint/parser.a
+[ 89% 1039/1167] compile out/host/linux-x86/bin/go/blueprint-pathtools/pkg/github.com/google/blueprint/pathtools.a
+[ 89% 1040/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-version/pkg/google.golang.org/protobuf/internal/version.a
+[ 89% 1041/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-errors/pkg/google.golang.org/protobuf/internal/errors.a
+[ 89% 1042/1167] compile out/host/linux-x86/bin/go/soong-android-allowlists/pkg/android/soong/android/allowlists.a
+[ 89% 1043/1167] compile out/host/linux-x86/bin/go/loadplugins/obj/loadplugins.a
+[ 89% 1044/1167] compile out/host/linux-x86/bin/go/golang-protobuf-android/pkg/google.golang.org/protobuf/android.a
+[ 89% 1045/1167] compile out/host/linux-x86/bin/go/go-cmp-internal-teststructs/pkg/github.com/google/go-cmp/cmp/internal/teststructs.a
+[ 89% 1046/1167] compile out/host/linux-x86/bin/go/soong-cquery/pkg/android/soong/bazel/cquery.a
+[ 89% 1047/1167] compile out/host/linux-x86/bin/go/soong-remoteexec/pkg/android/soong/remoteexec.a
+[ 89% 1048/1167] compile out/host/linux-x86/bin/go/golang-protobuf-encoding-protowire/pkg/google.golang.org/protobuf/encoding/protowire.a
+[ 89% 1049/1167] compile out/host/linux-x86/bin/go/soong-response/pkg/android/soong/response.a
+[ 89% 1050/1167] compile out/host/linux-x86/bin/go/soong-starlark-format/pkg/android/soong/starlark_fmt.a
+[ 90% 1051/1167] compile out/host/linux-x86/bin/go/go-starlark-syntax/pkg/go.starlark.net/syntax.a
+[ 90% 1052/1167] compile out/host/linux-x86/bin/go/treble_report_app/pkg/tools/treble/build/report/app.a
+[ 90% 1053/1167] compile out/host/linux-x86/bin/go/blueprint-proptools/pkg/github.com/google/blueprint/proptools.a
+[ 90% 1054/1167] link out/host/linux-x86/bin/go/loadplugins/obj/a.out
+[ 90% 1055/1167] compile out/host/linux-x86/bin/go/go-starlark-resolve/pkg/go.starlark.net/resolve.a
+[ 90% 1056/1167] compile out/host/linux-x86/bin/go/golang-protobuf-reflect-protoreflect/pkg/google.golang.org/protobuf/reflect/protoreflect.a
+[ 90% 1057/1167] cp out/host/linux-x86/bin/loadplugins
+[ 90% 1058/1167] compile out/host/linux-x86/bin/go/treble_report_module/pkg/tools/treble/build/report/report.a
+[ 90% 1059/1167] compile out/host/linux-x86/bin/go/treble_report_local/pkg/tools/treble/build/report/local.a
+[ 90% 1060/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-descopts/pkg/google.golang.org/protobuf/internal/descopts.a
+[ 90% 1061/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-messageset/pkg/google.golang.org/protobuf/internal/encoding/messageset.a
+[ 91% 1062/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-genid/pkg/google.golang.org/protobuf/internal/genid.a
+[ 91% 1063/1167] compile out/host/linux-x86/bin/go/golang-protobuf-runtime-protoiface/pkg/google.golang.org/protobuf/runtime/protoiface.a
+[ 91% 1064/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-strs/pkg/google.golang.org/protobuf/internal/strs.a
+[ 91% 1065/1167] create out/host/linux-x86/bin/go/soong_build/gen/plugin.go
+[ 91% 1066/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-descfmt/pkg/google.golang.org/protobuf/internal/descfmt.a
+[ 91% 1067/1167] compile out/host/linux-x86/bin/go/golang-protobuf-reflect-protoregistry/pkg/google.golang.org/protobuf/reflect/protoregistry.a
+[ 91% 1068/1167] compile out/host/linux-x86/bin/go/go-starlark-internal-compile/pkg/go.starlark.net/internal/compile.a
+[ 91% 1069/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-text/pkg/google.golang.org/protobuf/internal/encoding/text.a
+[ 91% 1070/1167] compile out/host/linux-x86/bin/go/go-cmp/pkg/github.com/google/go-cmp/cmp.a
+[ 91% 1071/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-defval/pkg/google.golang.org/protobuf/internal/encoding/defval.a
+[ 91% 1072/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-order/pkg/google.golang.org/protobuf/internal/order.a
+[ 91% 1073/1167] compile out/host/linux-x86/bin/go/golang-protobuf-proto/pkg/google.golang.org/protobuf/proto.a
+[ 92% 1074/1167] compile out/host/linux-x86/bin/go/golang-protobuf-encoding-prototext/pkg/google.golang.org/protobuf/encoding/prototext.a
+[ 92% 1075/1167] compile out/host/linux-x86/bin/go/blueprint/pkg/github.com/google/blueprint.a
+[ 92% 1076/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-filedesc/pkg/google.golang.org/protobuf/internal/filedesc.a
+[ 92% 1077/1167] compile out/host/linux-x86/bin/go/soong/pkg/android/soong.a
+[ 92% 1078/1167] compile out/host/linux-x86/bin/go/go-starlark-starlark/pkg/go.starlark.net/starlark.a
+[ 92% 1079/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-encoding-tag/pkg/google.golang.org/protobuf/internal/encoding/tag.a
+[ 92% 1080/1167] compile out/host/linux-x86/bin/go/go-starlark-starlarkstruct/pkg/go.starlark.net/starlarkstruct.a
+[ 92% 1081/1167] compile out/host/linux-x86/bin/go/blueprint-bootstrap-bpdoc/pkg/github.com/google/blueprint/bootstrap/bpdoc.a
+[ 92% 1082/1167] compile out/host/linux-x86/bin/go/go-starlark-starlarktest/pkg/go.starlark.net/starlarktest.a
+[ 92% 1083/1167] compile out/host/linux-x86/bin/go/go-starlark-starlarkjson/pkg/go.starlark.net/starlarkjson.a
+[ 92% 1084/1167] compile out/host/linux-x86/bin/go/blueprint-bootstrap/pkg/github.com/google/blueprint/bootstrap.a
+[ 92% 1085/1167] compile out/host/linux-x86/bin/go/soong-starlark/pkg/android/soong/starlark_import.a
+[ 93% 1086/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-impl/pkg/google.golang.org/protobuf/internal/impl.a
+[ 93% 1087/1167] compile out/host/linux-x86/bin/go/golang-protobuf-internal-filetype/pkg/google.golang.org/protobuf/internal/filetype.a
+[ 93% 1088/1167] compile out/host/linux-x86/bin/go/golang-protobuf-runtime-protoimpl/pkg/google.golang.org/protobuf/runtime/protoimpl.a
+[ 93% 1089/1167] compile out/host/linux-x86/bin/go/soong-android_team_proto/pkg/android/soong/android/team_proto.a
+[ 93% 1090/1167] compile out/host/linux-x86/bin/go/soong-ui-bazel_metrics_proto/pkg/android/soong/ui/metrics/bazel_metrics_proto.a
+[ 93% 1091/1167] compile out/host/linux-x86/bin/go/soong-testing-test_spec_proto/pkg/android/soong/testing/test_spec_proto.a
+[ 93% 1092/1167] compile out/host/linux-x86/bin/go/soong-testing-code_metadata_internal_proto/pkg/android/soong/testing/code_metadata_internal_proto.a
+[ 93% 1093/1167] compile out/host/linux-x86/bin/go/sbox_proto/pkg/android/soong/cmd/sbox/sbox_proto.a
+[ 93% 1094/1167] compile out/host/linux-x86/bin/go/soong-ui-metrics_upload_proto/pkg/android/soong/ui/metrics/upload_proto.a
+[ 93% 1095/1167] compile out/host/linux-x86/bin/go/soong-ui-mk_metrics_proto/pkg/android/soong/ui/metrics/mk_metrics_proto.a
+[ 93% 1096/1167] compile out/host/linux-x86/bin/go/soong-ui-bp2build_metrics_proto/pkg/android/soong/ui/metrics/bp2build_metrics_proto.a
+[ 94% 1097/1167] compile out/host/linux-x86/bin/go/soong-ui-metrics_proto/pkg/android/soong/ui/metrics/metrics_proto.a
+[ 94% 1098/1167] compile out/host/linux-x86/bin/go/bazel_build_proto/pkg/prebuilts/bazel/common/proto/build.a
+[ 94% 1099/1167] compile out/host/linux-x86/bin/go/bazel_analysis_v2_proto/pkg/prebuilts/bazel/common/proto/analysis_v2.a
+[ 94% 1100/1167] compile out/host/linux-x86/bin/go/soong-bazel/pkg/android/soong/bazel.a
+[ 94% 1101/1167] compile out/host/linux-x86/bin/go/soong-shared/pkg/android/soong/shared.a
+[ 94% 1102/1167] compile out/host/linux-x86/bin/go/soong-android-soongconfig/pkg/android/soong/android/soongconfig.a
+[ 94% 1103/1167] compile out/host/linux-x86/bin/go/soong-ui-metrics/pkg/android/soong/ui/metrics.a
+[ 94% 1104/1167] compile out/host/linux-x86/bin/go/soong-android/pkg/android/soong/android.a
+[ 94% 1105/1167] compile out/host/linux-x86/bin/go/soong-aidl-library/pkg/android/soong/aidl_library.a
+[ 94% 1106/1167] compile out/host/linux-x86/bin/go/cuttlefish-soong-rules/pkg/android/soong/cuttlefish.a
+[ 94% 1107/1167] compile out/host/linux-x86/bin/go/kernel-config-soong-rules/pkg/android/soong/kernel/configs.a
+[ 94% 1108/1167] compile out/host/linux-x86/bin/go/soong-bloaty/pkg/android/soong/bloaty.a
+[ 95% 1109/1167] compile out/host/linux-x86/bin/go/soong-fuzz/pkg/android/soong/fuzz.a
+[ 95% 1110/1167] compile out/host/linux-x86/bin/go/soong-aconfig/pkg/android/soong/aconfig.a
+[ 95% 1111/1167] compile out/host/linux-x86/bin/go/soong-icu/pkg/android/soong/icu.a
+[ 95% 1112/1167] compile out/host/linux-x86/bin/go/soong-dexpreopt/pkg/android/soong/dexpreopt.a
+[ 95% 1113/1167] compile out/host/linux-x86/bin/go/soong-java-config/pkg/android/soong/java/config.a
+[ 95% 1114/1167] compile out/host/linux-x86/bin/go/soong-lineage-generator/pkg/lineage/soong/generator.a
+[ 95% 1115/1167] compile out/host/linux-x86/bin/go/soong-java-config-error_prone/pkg/android/soong/java/config/error_prone.a
+[ 95% 1116/1167] compile out/host/linux-x86/bin/go/soong-phony/pkg/android/soong/phony.a
+[ 95% 1117/1167] compile out/host/linux-x86/bin/go/soong-provenance/pkg/android/soong/provenance.a
+[ 95% 1118/1167] compile out/host/linux-x86/bin/go/soong-genrule/pkg/android/soong/genrule.a
+[ 95% 1119/1167] compile out/host/linux-x86/bin/go/soong-robolectric/pkg/android/soong/robolectric.a
+[ 95% 1120/1167] compile out/host/linux-x86/bin/go/soong-multitree/pkg/android/soong/multitree.a
+[ 96% 1121/1167] compile out/host/linux-x86/bin/go/soong-tradefed/pkg/android/soong/tradefed.a
+[ 96% 1122/1167] compile out/host/linux-x86/bin/go/soong-cc-config/pkg/android/soong/cc/config.a
+[ 96% 1123/1167] compile out/host/linux-x86/bin/go/soong-fs_config/pkg/android/soong/fs_config.a
+[ 96% 1124/1167] compile out/host/linux-x86/bin/go/vintf-compatibility-matrix-soong-rules/pkg/android/soong/vintf-compatibility-matrix.a
+[ 96% 1125/1167] compile out/host/linux-x86/bin/go/soong-snapshot/pkg/android/soong/snapshot.a
+[ 96% 1126/1167] compile out/host/linux-x86/bin/go/soong-testing/pkg/android/soong/testing.a
+[ 96% 1127/1167] compile out/host/linux-x86/bin/go/soong-wayland-protocol-codegen/pkg/android/soong/external/wayland-protocol.a
+[ 96% 1128/1167] compile out/host/linux-x86/bin/go/soong-libchrome/pkg/android/soong/external/libchrome.a
+[ 96% 1129/1167] compile out/host/linux-x86/bin/go/soong-rust-config/pkg/android/soong/rust/config.a
+[ 96% 1130/1167] compile out/host/linux-x86/bin/go/soong-etc/pkg/android/soong/etc.a
+[ 96% 1131/1167] compile out/host/linux-x86/bin/go/soong-ca-certificates/pkg/android/soong/system/ca-certificates.a
+[ 97% 1132/1167] compile out/host/linux-x86/bin/go/soong-ca-certificates-apex/pkg/android/soong/external/conscrypt/apex/ca-certificates.a
+[ 97% 1133/1167] compile out/host/linux-x86/bin/go/soong-xml/pkg/android/soong/xml.a
+[ 97% 1134/1167] compile out/host/linux-x86/bin/go/soong-cc/pkg/android/soong/cc.a
+[ 97% 1135/1167] compile out/host/linux-x86/bin/go/soong-display_defaults/pkg/android/soong/hardware/qcom/sm8150/display.a
+[ 97% 1136/1167] compile out/host/linux-x86/bin/go/soong-display_defaults_sm7250/pkg/android/soong/hardware/qcom/sm7250/display.a
+[ 97% 1137/1167] compile out/host/linux-x86/bin/go/arm_compute_library_nn_driver/pkg/arm_compute_library_nn_driver.a
+[ 97% 1138/1167] compile out/host/linux-x86/bin/go/soong-android-sdk/pkg/android/soong/android_sdk.a
+[ 97% 1139/1167] compile out/host/linux-x86/bin/go/soong-kernel/pkg/android/soong/kernel.a
+[ 97% 1140/1167] compile out/host/linux-x86/bin/go/soong-clang-prebuilts/pkg/android/soong/prebuilts/clang/host/linux-x86/clangprebuilts.a
+[ 97% 1141/1167] compile out/host/linux-x86/bin/go/soong-clang/pkg/android/soong/external/clang.a
+[ 97% 1142/1167] compile out/host/linux-x86/bin/go/soong-bpf/pkg/android/soong/bpf.a
+[ 97% 1143/1167] compile out/host/linux-x86/bin/go/soong-linkerconfig/pkg/android/soong/linkerconfig.a
+[ 98% 1144/1167] compile out/host/linux-x86/bin/go/soong-llvm/pkg/android/soong/external/llvm.a
+[ 98% 1145/1167] compile out/host/linux-x86/bin/go/soong-python/pkg/android/soong/python.a
+[ 98% 1146/1167] compile out/host/linux-x86/bin/go/soong-filesystem/pkg/android/soong/filesystem.a
+[ 98% 1147/1167] compile out/host/linux-x86/bin/go/soong-rust/pkg/android/soong/rust.a
+[ 98% 1148/1167] compile out/host/linux-x86/bin/go/soong-rust-prebuilts/pkg/android/soong/prebuilts/rust/rustprebuilts.a
+[ 98% 1149/1167] compile out/host/linux-x86/bin/go/soong-java/pkg/android/soong/java.a
+[ 98% 1150/1167] compile out/host/linux-x86/bin/go/soong-suite-harness/pkg/android/soong/tradefed/suite_harness.a
+[ 98% 1151/1167] compile out/host/linux-x86/bin/go/soong-csuite/pkg/android/soong/csuite.a
+[ 98% 1152/1167] compile out/host/linux-x86/bin/go/soong-sysprop/pkg/android/soong/sysprop.a
+[ 98% 1153/1167] compile out/host/linux-x86/bin/go/soong-api/pkg/android/soong/api.a
+[ 98% 1154/1167] compile out/host/linux-x86/bin/go/soong-sh/pkg/android/soong/sh.a
+[ 98% 1155/1167] compile out/host/linux-x86/bin/go/soong-aconfig-codegen/pkg/android/soong/aconfig/codegen.a
+[ 99% 1156/1167] compile out/host/linux-x86/bin/go/xsdc-soong-rules/pkg/android/soong/xsdc.a
+[ 99% 1157/1167] compile out/host/linux-x86/bin/go/hidl-soong-rules/pkg/android/soong/hidl.a
+[ 99% 1158/1167] compile out/host/linux-x86/bin/go/aidl-soong-rules/pkg/android/soong/aidl.a
+[ 99% 1159/1167] compile out/host/linux-x86/bin/go/soong-selinux/pkg/android/soong/selinux.a
+[ 99% 1160/1167] compile out/host/linux-x86/bin/go/soong-apex/pkg/android/soong/apex.a
+[ 99% 1161/1167] compile out/host/linux-x86/bin/go/soong-bp2build/pkg/android/soong/bp2build.a
+[ 99% 1162/1167] compile out/host/linux-x86/bin/go/soong-art/pkg/android/soong/art.a
+[ 99% 1163/1167] compile out/host/linux-x86/bin/go/soong-sdk/pkg/android/soong/sdk.a
+[ 99% 1164/1167] compile out/host/linux-x86/bin/go/soong_build/obj/soong_build.a
+[ 99% 1165/1167] link out/host/linux-x86/bin/go/soong_build/obj/a.out
+[ 99% 1166/1167] cp out/host/linux-x86/bin/soong_build
+[100% 1167/1167] analyzing Android.bp files and generating ninja file at out/soong/build.lineage_vitamin.ninja
+out/build-lineage_vitamin-cleanspec.ninja is missing, regenerating...
+Adding CUSTOM_LOCALES [ast_ES gd_GB cy_GB fur_IT] to PRODUCT_LOCALES [en_US en_US af_ZA am_ET ar_EG ar_XB as_IN az_AZ be_BY bg_BG bn_BD bs_BA ca_ES cs_CZ da_DK de_DE el_GR en_AU en_CA en_GB en_IN en_XA es_ES es_US et_EE eu_ES fa_IR fi_FI fr_CA fr_FR gl_ES gu_IN hi_IN hr_HR hu_HU hy_AM in_ID is_IS it_IT iw_IL ja_JP ka_GE kk_KZ km_KH kn_IN ko_KR ky_KG lo_LA lt_LT lv_LV mk_MK ml_IN mn_MN mr_IN ms_MY my_MM nb_NO ne_NP nl_NL or_IN pa_IN pl_PL pt_BR pt_PT ro_RO ru_RU si_LK sk_SK sl_SI sq_AL sr_Latn_RS sr_RS sv_SE sw_TZ ta_IN te_IN th_TH tl_PH tr_TR uk_UA ur_PK uz_UZ vi_VN zh_CN zh_HK zh_TW zu_ZA en_XC]
+out/build-lineage_vitamin.ninja is missing, regenerating...
+[100% 1168/1168] initializing legacy Make module parser ...
+Adding CUSTOM_LOCALES [ast_ES gd_GB cy_GB fur_IT] to PRODUCT_LOCALES [en_US en_US af_ZA am_ET ar_EG ar_XB as_IN az_AZ be_BY bg_BG bn_BD bs_BA ca_ES cs_CZ da_DK de_DE el_GR en_AU en_CA en_GB en_IN en_XA es_ES es_US et_EE eu_ES fa_IR fi_FI fr_CA fr_FR gl_ES gu_IN hi_IN hr_HR hu_HU hy_AM in_ID is_IS it_IT iw_IL ja_JP ka_GE kk_KZ km_KH kn_IN ko_KR ky_KG lo_LA lt_LT lv_LV mk_MK ml_IN mn_MN mr_IN ms_MY my_MM nb_NO ne_NP nl_NL or_IN pa_IN pl_PL pt_BR pt_PT ro_RO ru_RU si_LK sk_SK sl_SI sq_AL sr_Latn_RS sr_RS sv_SE sw_TZ ta_IN te_IN th_TH tl_PH tr_TR uk_UA ur_PK uz_UZ vi_VN zh_CN zh_HK zh_TW zu_ZA en_XC]
+[ 87% 1169/1338] including out/soong/installs-lineage_vitamin.mk ...
+[ 87% 1170/1338] including out/soong/Android-lineage_vitamin.mk ...
+[ 87% 1171/1338] including art/Android.mk ...
+[ 87% 1172/1338] including bionic/Android.mk ...
+[ 87% 1173/1338] including bootable/recovery/Android.mk ...
+[ 87% 1174/1338] including build/make/target/board/Android.mk ...
+[ 87% 1175/1338] including build/make/target/product/gsi/Android.mk ...
+[ 87% 1176/1338] including build/make/target/product/security/Android.mk ...
+[ 87% 1177/1338] including build/make/tools/fs_config/Android.mk ...
+[ 88% 1178/1338] including development/build/Android.mk ...
+[ 88% 1179/1338] including development/gki/Android.mk ...
+[ 88% 1180/1338] including device/generic/car/Android.mk ...
+[ 88% 1181/1338] including device/generic/goldfish-opengl/Android.mk ...
+[ 88% 1182/1338] including device/generic/goldfish/Android.mk ...
+[ 88% 1183/1338] including device/generic/trusty/Android.mk ...
+[ 88% 1184/1338] including device/generic/uml/Android.mk ...
+[ 88% 1185/1338] including device/google/atv/Android.mk ...
+[ 88% 1186/1338] including device/google/contexthub/firmware/Android.mk ...
+[ 88% 1187/1338] including device/google/contexthub/lefty/Android.mk ...
+[ 88% 1188/1338] including device/google/contexthub/lib/Android.mk ...
+[ 88% 1189/1338] including device/google/contexthub/sensorhal/Android.mk ...
+[ 88% 1190/1338] including device/google/cuttlefish/Android.mk ...
+[ 89% 1191/1338] including device/google_car/common/Android.mk ...
+[ 89% 1192/1338] including device/lineage/atv/Android.mk ...
+[ 89% 1193/1338] including device/oneplus/vitamin/Android.mk ...
+[ 89% 1194/1338] including device/oplus/camera/Android.mk ...
+[ 89% 1195/1338] including device/sample/Android.mk ...
+[ 89% 1196/1338] including external/ant-wireless/ant_native/Android.mk ...
+[ 89% 1197/1338] including external/ant-wireless/ant_service/Android.mk ...
+[ 89% 1198/1338] including external/chromium-webview/Android.mk ...
+[ 89% 1199/1338] including external/e2fsprogs/Android.mk ...
+[ 89% 1200/1338] including external/exoplayer/Android.mk ...
+[ 89% 1201/1338] including external/fmtlib/support/Android.mk ...
+[ 89% 1202/1338] including external/google-breakpad/Android.mk ...
+[ 89% 1203/1338] including external/googletest/googletest/Android.mk ...
+[ 89% 1204/1338] including external/hyphenation-patterns/Android.mk ...
+[ 90% 1205/1338] including external/icu/icu4c/Android.mk ...
+[ 90% 1206/1338] including external/libaom/third_party/libwebm/Android.mk ...
+[ 90% 1207/1338] including external/libusb/Android.mk ...
+[ 90% 1208/1338] including external/libvpx/build/make/Android.mk ...
+[ 90% 1209/1338] including external/libvpx/test/android/Android.mk ...
+[ 90% 1210/1338] including external/libvpx/third_party/libwebm/Android.mk ...
+[ 90% 1211/1338] including external/libwebm/Android.mk ...
+[ 90% 1212/1338] including external/libwebsockets/Android.mk ...
+[ 90% 1213/1338] including external/ltp/Android.mk ...
+[ 90% 1214/1338] including external/mesa3d/Android.mk ...
+[ 90% 1215/1338] including external/noto-fonts/emoji-compat-flatbuffers/Android.mk ...
+[ 90% 1216/1338] including external/proguard/Android.mk ...
+[ 90% 1217/1338] including external/vogar/Android.mk ...
+[ 91% 1218/1338] including external/vulkan-validation-layers/Android.mk ...
+[ 91% 1219/1338] including external/walt/android/WALT/app/src/main/jni/Android.mk ...
+[ 91% 1220/1338] including external/webp/Android.mk ...
+[ 91% 1221/1338] including external/webrtc/Android.mk ...
+[ 91% 1222/1338] including external/wpa_supplicant_8/Android.mk ...
+[ 91% 1223/1338] including frameworks/base/Android.mk ...
+[ 91% 1224/1338] including frameworks/libs/binary_translation/Android.mk ...
+[ 91% 1225/1338] including hardware/broadcom/libbt/Android.mk ...
+[ 91% 1226/1338] including hardware/broadcom/wlan/bcmdhd/Android.mk ...
+[ 91% 1227/1338] including hardware/google/camera/Android.mk ...
+[ 91% 1228/1338] including hardware/google/easel/amber/camera/Android.mk ...
+[ 91% 1229/1338] including hardware/google/gchips/Android.mk ...
+[ 91% 1230/1338] including hardware/google/graphics/common/Android.mk ...
+[ 92% 1231/1338] including hardware/google/graphics/gs101/libhwc2.1/Android.mk ...
+[ 92% 1232/1338] including hardware/google/graphics/gs201/libhwc2.1/Android.mk ...
+[ 92% 1233/1338] including hardware/google/graphics/zuma/libhwc2.1/Android.mk ...
+[ 92% 1234/1338] including hardware/interfaces/compatibility_matrices/Android.mk ...
+[ 92% 1235/1338] including hardware/interfaces/configstore/1.1/default/Android.mk ...
+[ 92% 1236/1338] including hardware/interfaces/graphics/composer/2.2/default/Android.mk ...
+[ 92% 1237/1338] including hardware/interfaces/keymaster/3.0/default/Android.mk ...
+[ 92% 1238/1338] including hardware/interfaces/media/1.0/xml/Android.mk ...
+[ 92% 1239/1338] including hardware/interfaces/soundtrigger/2.0/default/Android.mk ...
+[ 92% 1240/1338] including hardware/interfaces/soundtrigger/2.1/default/Android.mk ...
+[ 92% 1241/1338] including hardware/interfaces/tv/Android.mk ...
+[ 92% 1242/1338] including hardware/interfaces/wifi/supplicant/1.1/vts/Android.mk ...
+[ 92% 1243/1338] including hardware/invensense/Android.mk ...
+[ 92% 1244/1338] including hardware/libhardware/Android.mk ...
+[ 93% 1245/1338] including hardware/libhardware_legacy/Android.mk ...
+[ 93% 1246/1338] including hardware/lineage/compat/interfaces/_backend/radio/config/Android.mk ...
+[ 93% 1247/1338] including hardware/mediatek/Android.mk ...
+[ 93% 1248/1338] including hardware/oplus/Android.mk ...
+[ 93% 1249/1338] including hardware/qcom-caf/bt/Android.mk ...
+[ 93% 1250/1338] including hardware/qcom-caf/msm8953/Android.mk ...
+[ 93% 1251/1338] including hardware/qcom-caf/msm8996/Android.mk ...
+[ 93% 1252/1338] including hardware/qcom-caf/msm8998/Android.mk ...
+[ 93% 1253/1338] including hardware/qcom-caf/sdm660/Android.mk ...
+[ 93% 1254/1338] including hardware/qcom-caf/sdm845/Android.mk ...
+[ 93% 1255/1338] including hardware/qcom-caf/sm8150/Android.mk ...
+[ 93% 1256/1338] including hardware/qcom-caf/sm8250/Android.mk ...
+[ 93% 1257/1338] including hardware/qcom-caf/sm8350/Android.mk ...
+[ 94% 1258/1338] including hardware/qcom-caf/sm8450/Android.mk ...
+[ 94% 1259/1338] including hardware/qcom-caf/sm8550/Android.mk ...
+[ 94% 1260/1338] including hardware/qcom-caf/vr/Android.mk ...
+[ 94% 1261/1338] including hardware/qcom-caf/wlan/Android.mk ...
+[ 94% 1262/1338] including hardware/qcom/Android.mk ...
+[ 94% 1263/1338] including hardware/ril/libril/Android.mk ...
+[ 94% 1264/1338] including hardware/ril/reference-ril/Android.mk ...
+[ 94% 1265/1338] including hardware/ril/rild/Android.mk ...
+[ 94% 1266/1338] including hardware/synaptics/wlan/synadhd/Android.mk ...
+[ 94% 1267/1338] including kernel/mediatek/k510/Android.mk ...
+[ 94% 1268/1338] including lineage-sdk/Android.mk ...
+[ 94% 1269/1338] including packages/apps/2byTricks/Android.mk ...
+[ 94% 1270/1338] including packages/apps/AudioFX/tests/Android.mk ...
+[ 94% 1271/1338] including packages/apps/Backgrounds/Android.mk ...
+[ 95% 1272/1338] including packages/apps/FMRadio/Android.mk ...
+[ 95% 1273/1338] including packages/inputmethods/LatinIME/Android.mk ...
+[ 95% 1274/1338] including packages/modules/Bluetooth/android/app/tests/Android.mk ...
+[ 95% 1275/1338] including packages/modules/Bluetooth/system/Android.mk ...
+[ 95% 1276/1338] including packages/overlays/Lineage/customizations/BlackTheme/Android.mk ...
+[ 95% 1277/1338] including packages/overlays/Lineage/customizations/NavigationBarNoHint/Android.mk ...
+[ 95% 1278/1338] including packages/overlays/Lineage/fonts/etc/Android.mk ...
+[ 95% 1279/1338] including packages/services/Car/Android.mk ...
+[ 95% 1280/1338] including platform_testing/libraries/audio-test-harness/tradefed/Android.mk ...
+[ 95% 1281/1338] including platform_testing/libraries/sts-common-util/sts-sdk/Android.mk ...
+[ 95% 1282/1338] including platform_testing/scripts/androidx-perf-setup/Android.mk ...
+[ 95% 1283/1338] including platform_testing/scripts/perf-load-setup/Android.mk ...
+[ 95% 1284/1338] including platform_testing/scripts/perf-setup/Android.mk ...
+[ 96% 1285/1338] including platform_testing/scripts/perfetto-setup/Android.mk ...
+[ 96% 1286/1338] including platform_testing/tests/bootdoa/Android.mk ...
+[ 96% 1287/1338] including prebuilts/sdk/Android.mk ...
+[ 96% 1288/1338] including system/chre/Android.mk ...
+[ 96% 1289/1338] including system/core/fastboot/Android.mk ...
+[ 96% 1290/1338] including system/core/init/Android.mk ...
+[ 96% 1291/1338] including system/core/rootdir/Android.mk ...
+[ 96% 1292/1338] including system/extras/Android.mk ...
+[ 96% 1293/1338] including system/libfmq/benchmarks/Android.mk ...
+[ 96% 1294/1338] including system/libhidl/vintfdata/Android.mk ...
+[ 96% 1295/1338] including system/libvintf/Android.mk ...
+[ 96% 1296/1338] including system/sepolicy/Android.mk ...
+[ 96% 1297/1338] including system/timezone/Android.mk ...
+[ 97% 1298/1338] including system/tools/hidl/build/Android.mk ...
+[ 97% 1299/1338] including test/mlts/benchmark/Android.mk ...
+[ 97% 1300/1338] including tools/platform-compat/Android.mk ...
+[ 97% 1301/1338] including tools/test/connectivity/Android.mk ...
+[ 97% 1302/1338] including tools/test/graphicsbenchmark/Android.mk ...
+[ 97% 1303/1338] including tools/tradefederation/core/Android.mk ...
+[ 97% 1304/1338] including tools/tradefederation/prebuilts/test_harness/Android.mk ...
+[ 97% 1305/1338] including vendor/2by2-prebuilt-apps/Android.mk ...
+[ 97% 1306/1338] including vendor/2by2/prebuilts/bootanimation/Android.mk ...
+[ 97% 1307/1338] including vendor/gapps/arm/Android.mk ...
+[ 97% 1308/1338] including vendor/gapps/arm64/Android.mk ...
+[ 97% 1309/1338] including vendor/gapps/common/Android.mk ...
+[ 97% 1310/1338] including vendor/gapps/x86/Android.mk ...
+[ 97% 1311/1338] including vendor/gapps/x86_64/Android.mk ...
+[ 98% 1312/1338] including vendor/gms/product/packages/apps/CalculatorGooglePrebuilt/Android.mk ...
+[ 98% 1313/1338] including vendor/gms/product/packages/apps/CalendarGooglePrebuilt/Android.mk ...
+[ 98% 1314/1338] including vendor/gms/product/packages/apps/Chrome-Stub/Android.mk ...
+[ 98% 1315/1338] including vendor/gms/product/packages/apps/Chrome/Android.mk ...
+[ 98% 1316/1338] including vendor/gms/product/packages/apps/LatinIMEGooglePrebuilt/Android.mk ...
+[ 98% 1317/1338] including vendor/gms/product/packages/apps/Photos/Android.mk ...
+[ 98% 1318/1338] including vendor/gms/product/packages/apps/PrebuiltDeskClockGoogle/Android.mk ...
+[ 98% 1319/1338] including vendor/gms/product/packages/apps/SideCar/Android.mk ...
+[ 98% 1320/1338] including vendor/gms/product/packages/apps/TrichromeLibrary-Stub/Android.mk ...
+[ 98% 1321/1338] including vendor/gms/product/packages/apps/TrichromeLibrary/Android.mk ...
+[ 98% 1322/1338] including vendor/gms/product/packages/apps/Wallet/Android.mk ...
+[ 98% 1323/1338] including vendor/gms/product/packages/apps/YouTubeMusicPrebuilt/Android.mk ...
+[ 98% 1324/1338] including vendor/gms/product/packages/privileged_apps/PrebuiltBugle/Android.mk ...
+[ 99% 1325/1338] including vendor/gms/product/packages/privileged_apps/RecorderPrebuilt/Android.mk ...
+[ 99% 1326/1338] including vendor/lineage/charger/Android.mk ...
+[ 99% 1327/1338] including vendor/lineage/config/Android.mk ...
+[ 99% 1328/1338] including vendor/oneplus/vitamin/Android.mk ...
+[ 99% 1329/1338] including vendor/qcom/opensource/audio-hal/st-hal-ar/Android.mk ...
+[ 99% 1330/1338] including vendor/qcom/opensource/audio-hal/st-hal/Android.mk ...
+[ 99% 1331/1338] including vendor/qcom/opensource/commonsys/wfd/Android.mk ...
+[ 99% 1332/1338] including vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um/ipanat/test/Android.mk ...
+[ 99% 1333/1338] including vendor/qcom/opensource/dataservices/datatop/Android.mk ...
+[ 99% 1334/1338] including vendor/qcom/opensource/libfmjni/Android.mk ...
+[ 99% 1335/1338] including vendor/qcom/opensource/power/Android.mk ...
+[ 99% 1336/1338] including out/soong/late-lineage_vitamin.mk ...
+[ 99% 1337/1338] finishing legacy Make module parsing ...
+vendor/lineage/build/tasks/kernel.mk:178: warning: **********************************************************
+vendor/lineage/build/tasks/kernel.mk:179: warning: * Kernel source found and configuration was defined,     *
+vendor/lineage/build/tasks/kernel.mk:180: warning: * but prebuilt kernel is being forced.                   *
+vendor/lineage/build/tasks/kernel.mk:181: warning: * While this is likely intentional,                      *
+vendor/lineage/build/tasks/kernel.mk:182: warning: * it is NOT SUPPORTED WHATSOEVER.                        *
+vendor/lineage/build/tasks/kernel.mk:183: warning: * Generated kernel headers may not align with            *
+vendor/lineage/build/tasks/kernel.mk:184: warning: * the ABI of kernel you're including.                    *
+vendor/lineage/build/tasks/kernel.mk:185: warning: * Please unset TARGET_FORCE_PREBUILT_KERNEL              *
+vendor/lineage/build/tasks/kernel.mk:186: warning: * to build the kernel from source.                       *
+vendor/lineage/build/tasks/kernel.mk:187: warning: **********************************************************
+[100% 1338/1338] writing legacy Make module rules ...
+FAILED: 
+build/make/core/Makefile:161: warning: overriding commands for target `out/target/product/vitamin/vendor/lib64/libstagefright_foundation-v33.so'
+out/soong/installs-lineage_vitamin.mk:163849: warning: ignoring old commands for target `out/target/product/vitamin/vendor/lib64/libstagefright_foundation-v33.so'
+build/make/core/Makefile:161: warning: overriding commands for target `out/target/product/vitamin/vendor/lib64/hw/consumerir.default.so'
+out/soong/installs-lineage_vitamin.mk:79718: warning: ignoring old commands for target `out/target/product/vitamin/vendor/lib64/hw/consumerir.default.so'
+device/oneplus/vitamin/device.mk:142: error: writing to readonly directory: "device/oneplus/vitamin/configs/permissions/privapp-permissions-oplus.xml"
+19:06:34 ckati failed with: exit status 1
+
+[0;31m#### failed to build some targets (03:19 (mm:ss)) ####[00m
+
