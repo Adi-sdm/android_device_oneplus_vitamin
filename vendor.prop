@@ -225,6 +225,8 @@ vendor.powerhal.interaction.max=50
 vendor.powerhal.interaction.offset=0
 
 # Radio
+persist.vendor.anr.enhancement=0
+persist.vendor.vonr_setting_support=1
 persist.radio.multisim.config=dsds
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0
@@ -247,7 +249,7 @@ persist.vendor.radio.mtk_ps2_rat=N/L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.smart.data.switch=1
 persist.vendor.radio.telecom.vibrate=0
-persist.vendor.vilte_support=1
+persist.vendor.vilte_support=0
 persist.vendor.viwifi_support=1
 persist.vendor.volte_support=1
 ro.telephony.default_network=33,33,33,33
@@ -301,3 +303,4 @@ ro.vendor.wlan.gen=gen4m_6983
 
 # Zygote
 zygote.critical_window.minute=10
+

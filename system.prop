@@ -14,8 +14,24 @@ debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 ro.opengles.version=196610
 
+ IMS
+persist.dbg.ims_volte_enable=1 
+persist.dbg.volte_avail_ovr=1 
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.rat_on=combine
+persist.radio.data_ltd_sys_ind=1
+persist.radio.data_con_rprt=1
+persist.radio.calls.on.ims=1
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
+persist.radio.apm_sim_not_pwdn=1
+persist.vendor.mdlog.flush_log_ratio=72340194296137244
+persist.vendor.mdlog.need_dump=1
+persist.vendor.vzw_device_type=0
+persist.vendor.wfc.sys_wfc_support=1
+persist.sys.mdlog_dumpback=2
 
 # Radio
 ro.vendor.mtk_cta_set=0
