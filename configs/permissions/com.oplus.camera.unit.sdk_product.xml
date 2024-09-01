@@ -6,7 +6,7 @@
         file = "/system_ext/framework/com.oplus.camera.unit.sdk.jar" />
 	<library name = "com.oplus.camera.unit.sdk.adapter"
         file = "/system_ext/framework/com.oplus.camera.unit.sdk.adapter.jar" />	
-
+    
      <!-- OPLUS appplatform -->
      <privapp-permissions package="com.oplus.appplatform">
         <permission name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -75,7 +75,7 @@
 
     </privapp-permissions>
 
-    <privapp-permissions package="com.coloros.gallery3d">
+    <privapp-permissions package="com.oneplus.gallery">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="oplus.permission.OPLUS_COMPONENT_SAFE"/>
