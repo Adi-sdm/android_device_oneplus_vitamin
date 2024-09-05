@@ -57,20 +57,14 @@ PRODUCT_PACKAGES += \
     audio.usb.default
 
 PRODUCT_PACKAGES += \
-    libaudiofoundation.vendor \
     libaudiopreprocessing \
-    libbluetooth_audio_session \
     libbundlewrapper \
-    libalsautils \
     libdownmix \
     libdynproc \
     libeffectproxy \
     libhapticgenerator \
     libldnhncr \
-    libnbaio_mono \
     libreverbwrapper \
-    libtinycompress \
-    libunwindstack.vendor \
     libvisualizer
 
 PRODUCT_PACKAGES += \
@@ -93,9 +87,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1.vendor
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
@@ -105,25 +96,6 @@ TARGET_SCREEN_HEIGHT := 2772
 TARGET_SCREEN_WIDTH := 1240
 
 # Camera
-PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
-    android.frameworks.stats-V1-ndk_platform.vendor \
-    android.hardware.camera.common@1.0.vendor \
-    android.hardware.camera.device@3.2.vendor \
-    android.hardware.camera.device@3.3.vendor \
-    android.hardware.camera.device@3.4.vendor \
-    android.hardware.camera.device@3.5.vendor \
-    android.hardware.camera.device@3.6.vendor \
-    android.hardware.camera.provider@2.4.vendor \
-    android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor
-
-PRODUCT_PACKAGES += \
-    libcamera_metadata.vendor \
-    libcamera_metadata_shim \
-    libexif.vendor \
-    libpng.vendor
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
@@ -138,17 +110,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek-mali
-
-PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.common-V2-ndk_platform.vendor \
-    android.frameworks.sensorservice@1.0.vendor \
-    libdrm.vendor \
-    libui.vendor \
-    libutilscallstack.vendor
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.faketouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.faketouch.xml \
@@ -171,9 +132,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4.vendor
-
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
@@ -192,21 +150,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-PRODUCT_PACKAGES += \
-    libgatekeeper.vendor
-
 # GNSS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk_platform.vendor
-
-PRODUCT_PACKAGES += \
-    libcurl.vendor \
-    libexpat.vendor
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
@@ -218,22 +162,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
-PRODUCT_PACKAGES += \
-    android.hardware.health@1.0.vendor
-
-# HIDL
-PRODUCT_PACKAGES += \
-    libhidltransport.vendor \
-    libhidltransport \
-    libhwbinder.vendor \
-    libhwbinder \
-    android.hidl.allocator@1.0.vendor
-
 # IMS
-PRODUCT_PACKAGES += \
-    libshim_sink \
-    libui_shim
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
     $(LOCAL_PATH)/configs/permissions/mediatek-common.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/mediatek-common.xml \
@@ -276,39 +205,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
 
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor \
-    libkeymaster_messages.vendor \
-    libkeymaster_portable.vendor
-
-# Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V1-ndk_platform.vendor \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
-    android.hardware.security.rkp-V3-ndk.vendor \
-    lib_android_keymaster_keymint_utils.vendor \
-    libkeymint.vendor
-
 # Keystore
-PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
-
-# Media
-PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libavservices_minijail_vendor \
-    libstagefright_softomx_plugin.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libcodec2_soft_common.vendor
-
-PRODUCT_PACKAGES += \
-    libstagefright_foundation-v33
 
 # Net
 PRODUCT_COPY_FILES += \
@@ -361,15 +260,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    libmtkperf_client_vendor \
-    libmtkperf_client
-
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -381,32 +272,11 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio@1.6.vendor
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor \
-    libchrome.vendor
-
 # Sensors
-PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
-    libdumpstateutil.vendor \
-    libsensorndkbridge \
-    libshim_sensors
-
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal \
     sensors.oplus
@@ -488,11 +358,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-wrapper \
     android.hardware.wifi-service
-
-PRODUCT_PACKAGES += \
-    android.hardware.tetheroffload.config@1.0.vendor \
-    android.hardware.tetheroffload.control@1.0.vendor \
-    android.hardware.tetheroffload.control@1.1.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
