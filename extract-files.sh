@@ -65,6 +65,18 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/bin/hw/android.hardware.ir-service)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.ir-V1-ndk_platform.so" "android.hardware.ir-V1-ndk.so" "${2}"
+            ;;
+        odm/lib64/libAlgoProcess.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V2-ndk_platform.so" "android.hardware.graphics.common-V2-ndk.so" "${2}"
+            ;;
+        odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk_platform.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.common-V2-ndk_platform.so" "android.hardware.common-V2-ndk.so" "${2}"
+            ;;
         odm/lib64/libCOppLceTonemapAPI.so|odm/lib64/libYTCommon.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
@@ -90,8 +102,16 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/bin/hw/android.hardware.gnss-service.mediatek|\
+        vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
             [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
+            "${PATCHELF}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
         vendor/bin/mnld|vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|vendor/lib64/liboplus_mtkcam_lightsensorprovider.so|vendor/lib64/mt6983/libaalservice.so)
@@ -115,6 +135,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             grep -q "libcamera_metadata_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcamera_metadata_shim.so" "${2}"
+            ;;
+        vendor/lib64/libmidasserviceintf_aidl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "android.frameworks.stats-V1-ndk_platform.so" "android.frameworks.stats-V1-ndk.so" "${2}"
             ;;
         vendor/lib64/mt6983/libmtkcam_stdutils.so)
             [ "$2" = "" ] && return 0

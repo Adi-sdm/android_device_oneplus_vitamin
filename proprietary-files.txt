@@ -1792,7 +1792,6 @@ vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendo
 odm/bin/hw/android.hardware.ir-service
 odm/etc/init/android.hardware.ir-service.rc
 odm/etc/vintf/manifest/android.hardware.ir-service.xml
-odm/lib64/android.hardware.ir-V1-ndk_platform.so
 
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service.trustonic
