@@ -22,7 +22,7 @@
         ]
       },
       {
-        "Name": "CPULittleClusterMaxFreq",
+        "Name": "CPUEfficiencyClusterMaxFreq",
         "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
         "Values": [
           "9999999",
@@ -61,7 +61,7 @@
         "ResetOnInit": true
       },
       {
-        "Name": "CPULittleClusterMinFreq",
+        "Name": "CPUEfficiencyClusterMinFreq",
         "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
         "Values": [
           "9999999",
@@ -99,7 +99,7 @@
         "ResetOnInit": true
       },
       {
-        "Name": "CPUMidClusterMaxFreq",
+        "Name": "CPUSuperClusterMaxFreq",
         "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq",
         "Values": [
           "9999999",
@@ -138,7 +138,7 @@
         "ResetOnInit": true
       },
       {
-        "Name": "CPUMidClusterMinFreq",
+        "Name": "CPUSuperClusterMinFreq",
         "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
         "Values": [
           "9999999",
@@ -176,7 +176,7 @@
         "ResetOnInit": true
       },
       {
-        "Name": "CPUBigClusterMaxFreq",
+        "Name": "CPUUltraClusterMaxFreq",
         "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_max_freq",
         "Values": [
           "9999999",
@@ -212,7 +212,7 @@
         "ResetOnInit": true
       },
       {
-        "Name": "CPUBigClusterMinFreq",
+        "Name": "CPUUltraClusterMinFreq",
         "Path": "/sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq",
         "Values": [
           "9999999",
@@ -309,37 +309,37 @@
     "Actions": [
       {
         "PowerHint": "INTERACTION",
-        "Node": "CPULittleClusterMinFreq",
+        "Node": "CPUEfficiencyClusterMinFreq",
         "Duration": 58,
         "Value": "1400000"
       },
       {
         "PowerHint": "INTERACTION",
-        "Node": "CPUMidClusterMinFreq",
+        "Node": "CPUSuperClusterMinFreq",
         "Duration": 58,
         "Value": "1400000"
       },
       {
         "PowerHint": "INTERACTION",
-        "Node": "CPUBigClusterMinFreq",
+        "Node": "CPUUltraClusterMinFreq",
         "Duration": 58,
         "Value": "1300000"
       },
       {
         "PowerHint": "LAUNCH",
-        "Node": "CPUBigClusterMinFreq",
+        "Node": "CPUUltraClusterMinFreq",
         "Duration": 1500,
         "Value": "9999999"
       },
       {
         "PowerHint": "LAUNCH",
-        "Node": "CPUMidClusterMinFreq",
+        "Node": "CPUSuperClusterMinFreq",
         "Duration": 1500,
         "Value": "9999999"
       },
       {
         "PowerHint": "LAUNCH",
-        "Node": "CPULittleClusterMinFreq",
+        "Node": "CPUEfficiencyClusterMinFreq",
         "Duration": 1500,
         "Value": "9999999"
       },
@@ -357,37 +357,37 @@
       },
       {
         "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUBigClusterMaxFreq",
+        "Node": "CPUUltraClusterMaxFreq",
         "Duration": 0,
         "Value": "9999999"
       },
       {
         "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUBigClusterMinFreq",
+        "Node": "CPUUltraClusterMinFreq",
         "Duration": 0,
         "Value": "9999999"
       },
       {
         "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUMidClusterMaxFreq",
+        "Node": "CPUSuperClusterMaxFreq",
         "Duration": 0,
         "Value": "9999999"
       },
       {
         "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUMidClusterMinFreq",
+        "Node": "CPUSuperClusterMinFreq",
         "Duration": 0,
         "Value": "9999999"
       },
       {
         "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPULittleClusterMaxFreq",
+        "Node": "CPUEfficiencyClusterMaxFreq",
         "Duration": 0,
         "Value": "9999999"
       },
       {
         "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPULittleClusterMinFreq",
+        "Node": "CPUEfficiencyClusterMinFreq",
         "Duration": 0,
         "Value": "9999999"
       },
