@@ -335,7 +335,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    OPlusCarrierConfigResTarget \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResAce2V \
     OPlusSettingsProviderResNord3 \
