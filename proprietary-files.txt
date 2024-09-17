@@ -1803,7 +1803,6 @@ odm/bin/hw/android.hardware.ir-service
 odm/etc/init/android.hardware.ir-service.rc
 odm/etc/vintf/manifest/android.hardware.ir-service.xml
 odm/lib64/android.hardware.ir-V1-ndk_platform.so
-vendor/lib64/hw/consumerir.default.so
 
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service.trustonic
