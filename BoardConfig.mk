@@ -61,7 +61,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules/vendor_dlkm.modules.load))
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules/vendor_ramdisk.modules.load))
@@ -98,7 +97,6 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    dtbo \
     odm \
     odm_dlkm \
     product \
