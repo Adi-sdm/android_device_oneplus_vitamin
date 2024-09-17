@@ -1923,6 +1923,7 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 
 # NFC
+odm/etc/libese-nxp.conf:vendor/etc/libese-nxp.conf
 odm/etc/nfc/libnfc-mtp-SN100.conf_21871:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_21871:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68:vendor/firmware/sn100u.bin
