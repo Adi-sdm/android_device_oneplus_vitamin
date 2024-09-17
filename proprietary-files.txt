@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Nord 3 5G (CPH2491_14.0.0.530(EX01)).
+## are from OnePlus Nord 3 5G (CPH2491_14.0.0.540(EX01)).
 
 # AEE
 vendor/lib64/libaedv.so

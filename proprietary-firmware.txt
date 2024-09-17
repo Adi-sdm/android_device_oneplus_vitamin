@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Nord 3 5G (CPH2491_14.0.0.530(EX01)).
+## are from OnePlus Nord 3 5G (CPH2491_14.0.0.540(EX01)).
 
 apusys.img;AB
 audio_dsp.img;AB
@@ -9,6 +9,7 @@ dtbo.img;AB
 gpueb.img;AB
 gz.img;AB
 lk.img;AB
+logo.img;AB
 mcf_ota.img;AB
 mcupm.img;AB
 md1img.img;AB
