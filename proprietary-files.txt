@@ -1738,7 +1738,6 @@ vendor/firmware/mali_csffw_reload.bin
 # Health
 odm/etc/bin/gauge_authenticate
 vendor/bin/fuelgauged
-vendor/etc/init/fuelgauged_init.rc
 vendor/lib64/libfgauge_gm30.so
 
 # IMS
@@ -1930,7 +1929,6 @@ odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_68:vendor/firmware/sn100u.bin
 vendor/bin/fuelgauged_nvram
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/nvram_daemon
-vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
