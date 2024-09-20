@@ -87,13 +87,13 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
-        vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-            ;;
         vendor/bin/mnld|vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|vendor/lib64/liboplus_mtkcam_lightsensorprovider.so|vendor/lib64/mt6983/libaalservice.so)
             [ "$2" = "" ] && return 0
             grep -q "libshim_sensors.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            ;;
+        vendor/etc/init/init.thermal_core.rc)
+            [ "$2" = "" ] && return 0
+            sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
             ;;
         vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so)
             [ "$2" = "" ] && return 0
