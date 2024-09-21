@@ -967,8 +967,6 @@ odm/etc/camera/tonemap/tonemap_lut_9
 odm/etc/camera/video_enhance.json
 odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
-odm/lib64/hw/vendor.oplus.hardware.cameraextension-V1-service-impl.so
-odm/lib64/hw/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
 odm/lib64/lib2DSlender.so
 odm/lib64/libAlgoInterface.so
 odm/lib64/libAlgoProcess.so
@@ -978,7 +976,6 @@ odm/lib64/libAncHumBokehPost.so
 odm/lib64/libAncHumVideoBase.so
 odm/lib64/libAncHumVideoBasePost.so
 odm/lib64/libAncHumanDoubleExposure.so
-odm/lib64/libAncHumanRetain.so
 odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegMultiSdk.so
 odm/lib64/libAncSegmentSdk.so
@@ -1092,7 +1089,6 @@ odm/lib64/libcoolex.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcustomer_cameradata.so
 odm/lib64/libcvface_api.so
-odm/lib64/libdav1d.so.4
 odm/lib64/libdla_loader.so
 odm/lib64/libdla_loader_ins.so;FIX_SONAME
 odm/lib64/libeffect_custom.so
@@ -1126,8 +1122,6 @@ odm/lib64/libstblur_capture_api.so
 odm/lib64/libstface_fd_api.so
 odm/lib64/libstfaceunlockppl.so
 odm/lib64/libstfd_mobile_api.so
-odm/lib64/libswresample.so
-odm/lib64/libswscale.so
 odm/lib64/libwatermark_photo.so
 odm/lib64/libyuvwrapper.so
 odm/lib64/mt6983/gc02m1_mipi_raw_22823_IdxMgr.so;SYMLINK=odm/lib64/gc02m1_mipi_raw_22823_IdxMgr.so
@@ -1155,7 +1149,6 @@ vendor/lib64/hw/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
 vendor/lib64/lib3a.ae.pipe.so
 vendor/lib64/libBasicModule.so
 vendor/lib64/libJpgEncPipe.so
-vendor/lib64/lib_rectify.so
 vendor/lib64/libaudodiag.so
 vendor/lib64/libcam.hal3a.soisdrv.so
 vendor/lib64/libcamalgo.WarpMapResizer.so
@@ -1175,7 +1168,6 @@ vendor/lib64/libcamalgo.warp.so
 vendor/lib64/libcamera_sendextdata.so
 vendor/lib64/libcameracustom.boostpool.so
 vendor/lib64/libcamxjson.so
-vendor/lib64/libcustomer_cameradata.so
 vendor/lib64/libcustomer_camerathermalpolicy.so
 vendor/lib64/libcustomer_testvision.so
 vendor/lib64/libcustomer_ulog.so
@@ -1195,7 +1187,6 @@ vendor/lib64/libmtkcam_fdWarpConvert.so
 vendor/lib64/libmtkcam_hal_custom_state.so
 vendor/lib64/libmtkcam_hal_custom_utils.so
 vendor/lib64/libmtkcam_ispEngine.so
-vendor/lib64/libmtkisp_metadata_v2.so
 vendor/lib64/liboplus.difference.analysis.so
 vendor/lib64/liboplus_mtkcam_lightsensorprovider.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
@@ -1491,9 +1482,6 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
-vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk_platform.so
-vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so
-vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk_platform.so
 
 # Camera firmware
 vendor/firmware/lib3a.ccu
@@ -1655,7 +1643,6 @@ odm/lib64/anc.capacitive.hal.so
 odm/lib64/anc.hal.so
 odm/lib64/hw/fingerprint.goodix_G3.default.so
 odm/lib64/libgf_hal_G3.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
 
 # FMRadio
@@ -1800,7 +1787,6 @@ vendor/etc/vintf/manifest/android.hardware.security.keymint-service.trustonic.xm
 vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.trustonic.xml
 vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 vendor/lib64/hw/kmsetkey.trustonic.so;SYMLINK=vendor/lib64/hw/kmsetkey.default.so
-vendor/lib64/libkmsetkey.so
 
 # Media (Codec2)
 odm/lib64/libc2filterplugin.so
@@ -2041,7 +2027,6 @@ vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6983.
 vendor/lib64/libSensorSave.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libhfmanagerwrapper.so
-vendor/lib64/libhwm-oplus.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 
