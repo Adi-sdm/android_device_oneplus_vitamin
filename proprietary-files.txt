@@ -969,19 +969,19 @@ odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/lib64/lib2DSlender.so
 odm/lib64/libAlgoInterface.so
-odm/lib64/libAlgoProcess.so
+odm/lib64/libAlgoProcess.so;DISABLE_CHECKELF
 odm/lib64/libAncFilter.so
-odm/lib64/libAncHumBokeh.so
-odm/lib64/libAncHumBokehPost.so
-odm/lib64/libAncHumVideoBase.so
-odm/lib64/libAncHumVideoBasePost.so
+odm/lib64/libAncHumBokeh.so;DISABLE_CHECKELF
+odm/lib64/libAncHumBokehPost.so;DISABLE_CHECKELF
+odm/lib64/libAncHumVideoBase.so;DISABLE_CHECKELF
+odm/lib64/libAncHumVideoBasePost.so;DISABLE_CHECKELF
 odm/lib64/libAncHumanDoubleExposure.so
 odm/lib64/libAncHumanSegFigureFusion.so
 odm/lib64/libAncSegMultiSdk.so
 odm/lib64/libAncSegmentSdk.so
 odm/lib64/libArcNetMtk.so
 odm/lib64/libBokehPre.so
-odm/lib64/libCNamaSDK_vendor.so
+odm/lib64/libCNamaSDK_vendor.so;DISABLE_CHECKELF
 odm/lib64/libCOppLceTonemapAPI.so
 odm/lib64/libCipCommon.so
 odm/lib64/libCipParamProcess.so
@@ -1004,7 +1004,7 @@ odm/lib64/libFaceDistortionCorrection.so
 odm/lib64/libFilterWrapper.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
 odm/lib64/libNamaWrapper.so
-odm/lib64/libOGLManager.so
+odm/lib64/libOGLManager.so;DISABLE_CHECKELF
 odm/lib64/libOPLUS_SCPortrait.so;FIX_SONAME
 odm/lib64/libPerfectColor.so
 odm/lib64/libPerfectlyClearCrux.so
@@ -1160,11 +1160,11 @@ vendor/lib64/libcamalgo.gyro.so
 vendor/lib64/libcamalgo.hdr10p.so
 vendor/lib64/libcamalgo.lmv.so
 vendor/lib64/libcamalgo.mcnr.so
-vendor/lib64/libcamalgo.n3d.so
+vendor/lib64/libcamalgo.n3d.so;DISABLE_CHECKELF
 vendor/lib64/libcamalgo.platform.so
 vendor/lib64/libcamalgo.utility.so
 vendor/lib64/libcamalgo.vsdofUtil.so
-vendor/lib64/libcamalgo.warp.so
+vendor/lib64/libcamalgo.warp.so;DISABLE_CHECKELF
 vendor/lib64/libcamera_sendextdata.so
 vendor/lib64/libcameracustom.boostpool.so
 vendor/lib64/libcamxjson.so
@@ -1423,7 +1423,7 @@ vendor/lib64/mt6983/libmtkcam_hwnode.so;SYMLINK=vendor/lib64/libmtkcam_hwnode.so
 vendor/lib64/mt6983/libmtkcam_hwutils.so;SYMLINK=vendor/lib64/libmtkcam_hwutils.so
 vendor/lib64/mt6983/libmtkcam_hwutils_android.so;SYMLINK=vendor/lib64/libmtkcam_hwutils_android.so
 vendor/lib64/mt6983/libmtkcam_hwutils_poweronoffcontroller.so;SYMLINK=vendor/lib64/libmtkcam_hwutils_poweronoffcontroller.so
-vendor/lib64/mt6983/libmtkcam_imgbuf_v2.so;SYMLINK=vendor/lib64/libmtkcam_imgbuf_v2.so
+vendor/lib64/mt6983/libmtkcam_imgbuf_v2.so;DISABLE_CHECKELF;SYMLINK=vendor/lib64/libmtkcam_imgbuf_v2.so
 vendor/lib64/mt6983/libmtkcam_ipc_core.so;SYMLINK=vendor/lib64/libmtkcam_ipc_core.so
 vendor/lib64/mt6983/libmtkcam_ipc_wrapper_common_client.so;SYMLINK=vendor/lib64/libmtkcam_ipc_wrapper_common_client.so
 vendor/lib64/mt6983/libmtkcam_ipc_wrapper_common_server.so;SYMLINK=vendor/lib64/libmtkcam_ipc_wrapper_common_server.so
@@ -1547,7 +1547,7 @@ vendor/lib64/vendor.oplus.hardware.cwb@1.0.so
 # Display (Mediatek)
 vendor/bin/hw/mt6983/android.hardware.graphics.allocator@4.0-service-mediatek.mt6983;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/lib64/hw/hwcomposer.mtk_common.so
+vendor/lib64/hw/hwcomposer.mtk_common.so;DISABLE_CHECKELF
 vendor/lib64/hw/mt6983/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6983/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/mt6983/gralloc.common.so;SYMLINK=vendor/lib64/hw/gralloc.common.so
@@ -1555,7 +1555,7 @@ vendor/lib64/libcomposer_ext.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libmml.so
-vendor/lib64/libnpagent.so
+vendor/lib64/libnpagent.so;DISABLE_CHECKELF
 vendor/lib64/mt6983/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
 vendor/lib64/mt6983/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
@@ -1695,10 +1695,10 @@ vendor/lib64/mt6983/libDR.so;SYMLINK=vendor/lib64/libDR.so
 # Graphics (MediaTek + ARM mali)
 vendor/etc/bh3.dla
 vendor/etc/genshin.dla
-vendor/lib64/egl/mt6983/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so,vendor/lib64/hw/vulkan.mt6983.so
+vendor/lib64/egl/mt6983/libGLES_mali.so;DISABLE_CHECKELF;SYMLINK=vendor/lib64/egl/libGLES_mali.so,vendor/lib64/hw/vulkan.mt6983.so
 vendor/lib64/hw/mt6983/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/libged.so
-vendor/lib64/libgpu_aux.so
+vendor/lib64/libgpu_aux.so;DISABLE_CHECKELF
 vendor/lib64/libgpud.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
@@ -1870,7 +1870,7 @@ vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml
 vendor/lib64/APUWareApusysServer.so
 vendor/lib64/APUWareHmpServer.so
-vendor/lib64/APUWareUtilsServer.so
+vendor/lib64/APUWareUtilsServer.so;DISABLE_CHECKELF
 vendor/lib64/libOpenCL.so
 vendor/lib64/libapu_mdw.so
 vendor/lib64/libapu_mdw_batch.so
@@ -1882,10 +1882,10 @@ vendor/lib64/libcmdl_ndk.mtk.vndk.so
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so;FIX_SONAME
 vendor/lib64/libnpagent_server.so
-vendor/lib64/libtflite_mtk.so
+vendor/lib64/libtflite_mtk.so;DISABLE_CHECKELF
 vendor/lib64/libvpu.so
-vendor/lib64/mt6983/libneuralnetworks_sl_driver_mtk_prebuilt.so;SYMLINK=vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so
-vendor/lib64/mt6983/libneuron_adapter_mgvi.so;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so
+vendor/lib64/mt6983/libneuralnetworks_sl_driver_mtk_prebuilt.so;DISABLE_CHECKELF;SYMLINK=vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so
+vendor/lib64/mt6983/libneuron_adapter_mgvi.so;DISABLE_CHECKELF;SYMLINK=vendor/lib64/libneuron_adapter_mgvi.so
 vendor/lib64/mt6983/libneuron_runtime.5.so;SYMLINK=vendor/lib64/libneuron_runtime.5.so
 vendor/lib64/mt6983/libneuron_wrapper.so;SYMLINK=vendor/lib64/libneuron_wrapper.so
 vendor/lib64/mt6983/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_driver.so
