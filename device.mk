@@ -346,6 +346,7 @@ PRODUCT_PACKAGES += \
     OPlusWifiResTarget
 
 PRODUCT_PACKAGES += \
+    ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget \
     PowerOffAlarmResTarget
