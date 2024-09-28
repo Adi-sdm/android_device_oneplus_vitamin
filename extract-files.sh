@@ -69,15 +69,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.hardware.ir-V1-ndk_platform.so" "android.hardware.ir-V1-ndk.so" "${2}"
             ;;
-        odm/lib64/libAlgoProcess.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "android.hardware.graphics.common-V2-ndk_platform.so" "android.hardware.graphics.common-V5-ndk.so" "${2}"
-            ;;
-        odm/lib64/libCOppLceTonemapAPI.so|\
-        odm/lib64/libYTCommon.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
-            ;;
         odm/lib64/vendor.oplus.hardware.hdcp-V1-ndk_platform.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.hardware.common-V2-ndk_platform.so" "android.hardware.common-V2-ndk.so" "${2}"
