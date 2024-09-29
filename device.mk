@@ -245,6 +245,9 @@ PRODUCT_PACKAGES += \
     OPlusWifiResTarget
 
 PRODUCT_PACKAGES += \
+    OPlusNfcResTarget
+
+PRODUCT_PACKAGES += \
     ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget \
