@@ -19,6 +19,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.PowerHalWifiMonitor=$(VENDOR_LOG_LEVEL) \
 	persist.log.tag.SurfaceControl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.UxUtility=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.libPowerHal=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mipc_lib=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.mtkpower@impl=$(VENDOR_LOG_LEVEL) \
