@@ -261,7 +261,7 @@
         "Values": [
           "0-3",
           "4-6",
-          "0-7"
+          "0-6"
         ],
         "ResetOnInit": true
       },
@@ -270,7 +270,7 @@
         "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
         "Values": [
           "10",
-          "100"
+          "80"
         ],
         "DefaultIndex": 0,
         "ResetOnInit": true
@@ -301,114 +301,115 @@
         "Type": "Property"
       }
     ],
-    "Actions": [
-      {
-        "PowerHint": "INTERACTION",
-        "Node": "CPUEfficiencyClusterMinFreq",
-        "Duration": 58,
-        "Value": "1400000"
-      },
-      {
-        "PowerHint": "INTERACTION",
-        "Node": "CPUSuperClusterMinFreq",
-        "Duration": 58,
-        "Value": "1400000"
-      },
-      {
-        "PowerHint": "INTERACTION",
-        "Node": "CPUUltraClusterMinFreq",
-        "Duration": 58,
-        "Value": "1300000"
-      },
-      {
-        "PowerHint": "LAUNCH",
-        "Node": "CPUUltraClusterMinFreq",
-        "Duration": 1500,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "LAUNCH",
-        "Node": "CPUSuperClusterMinFreq",
-        "Duration": 1500,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "LAUNCH",
-        "Node": "CPUEfficiencyClusterMinFreq",
-        "Duration": 1500,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "LAUNCH",
-        "Node": "MemFreq",
-        "Duration": 1500,
-        "Value": "9999999999"
-      },
-      {
-        "PowerHint": "LAUNCH",
-        "Node": "UclampTAMin",
-        "Duration": 1500,
-        "Value": "100"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUUltraClusterMaxFreq",
-        "Duration": 0,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUUltraClusterMinFreq",
-        "Duration": 0,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUSuperClusterMaxFreq",
-        "Duration": 0,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUSuperClusterMinFreq",
-        "Duration": 0,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUEfficiencyClusterMaxFreq",
-        "Duration": 0,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "CPUEfficiencyClusterMinFreq",
-        "Duration": 0,
-        "Value": "9999999"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "UclampTAMin",
-        "Duration": 0,
-        "Value": "100"
-      },
-      {
-        "PowerHint": "FIXED_PERFORMANCE",
-        "Node": "MemFreq",
-        "Duration": 0,
-        "Value": "9999999999"
-      },
-      {
-        "PowerHint": "EXPENSIVE_RENDERING",
-        "Node": "PowerHALRenderingState",
-        "Duration": 0,
-        "Value": "EXPENSIVE_RENDERING"
-      },
-      {
-        "PowerHint": "ML_ACC",
-        "Node": "PMQoSCpuDmaLatency",
-        "Duration": 1500,
-        "Value": "51"
-      }
-    ]
+      "Actions": [
+        {
+          "PowerHint": "INTERACTION",
+          "Node": "CPUEfficiencyClusterMinFreq",
+          "Duration": 58,
+          "Value": "800000"
+        },
+        {
+          "PowerHint": "INTERACTION",
+          "Node": "CPUSuperClusterMinFreq",
+          "Duration": 58,
+          "Value": "1200000"
+        },
+        {
+          "PowerHint": "INTERACTION",
+          "Node": "CPUUltraClusterMinFreq",
+          "Duration": 58,
+          "Value": "1300000"
+        },
+        {
+          "PowerHint": "LAUNCH",
+          "Node": "CPUUltraClusterMinFreq",
+          "Duration": 1000,
+          "Value": "2850000"
+        },
+        {
+          "PowerHint": "LAUNCH",
+          "Node": "CPUSuperClusterMinFreq",
+          "Duration": 1000,
+          "Value": "2350000"
+        },
+        {
+          "PowerHint": "LAUNCH",
+          "Node": "CPUEfficiencyClusterMinFreq",
+          "Duration": 1000,
+          "Value": "1800000"
+        },
+        {
+          "PowerHint": "LAUNCH",
+          "Node": "MemFreq",
+          "Duration": 1000,
+          "Value": "4266000000"
+        },
+        {
+          "PowerHint": "LAUNCH",
+          "Node": "UclampTAMin",
+          "Duration": 1000,
+          "Value": "80"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "CPUUltraClusterMaxFreq",
+          "Duration": 0,
+          "Value": "2850000"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "CPUUltraClusterMinFreq",
+          "Duration": 0,
+          "Value": "1800000"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "CPUSuperClusterMaxFreq",
+          "Duration": 0,
+          "Value": "2400000"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "CPUSuperClusterMinFreq",
+          "Duration": 0,
+          "Value": "1500000"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "CPUEfficiencyClusterMaxFreq",
+          "Duration": 0,
+          "Value": "1800000"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "CPUEfficiencyClusterMinFreq",
+          "Duration": 0,
+          "Value": "800000"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "UclampTAMin",
+          "Duration": 0,
+          "Value": "80"
+        },
+        {
+          "PowerHint": "FIXED_PERFORMANCE",
+          "Node": "MemFreq",
+          "Duration": 0,
+          "Value": "3200000000"
+        },
+        {
+          "PowerHint": "EXPENSIVE_RENDERING",
+          "Node": "PowerHALRenderingState",
+          "Duration": 0,
+          "Value": "EXPENSIVE_RENDERING"
+        },
+        {
+          "PowerHint": "ML_ACC",
+          "Node": "PMQoSCpuDmaLatency",
+          "Duration": 1500,
+          "Value": "51"
+        }
+      ]
   }
+  
