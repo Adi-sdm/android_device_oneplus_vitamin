@@ -487,7 +487,6 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service \
     android.hardware.vibrator-service.vitamin
 
 PRODUCT_COPY_FILES += \
