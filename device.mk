@@ -487,7 +487,8 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set, vibrator, vibratortargets, vibratoraidlV2target)
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    vendor.qti.hardware.vibrator.service \
+    android.hardware.vibrator-service.mediatek
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
