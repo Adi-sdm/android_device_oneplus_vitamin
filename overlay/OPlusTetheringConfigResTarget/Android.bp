@@ -5,5 +5,5 @@
 
 runtime_resource_overlay {
     name: "OPlusTetheringConfigResTarget",
-    device_specific: true,
+    vendor: true,
 }
