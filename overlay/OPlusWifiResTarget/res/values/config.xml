@@ -21,6 +21,10 @@
      entries do not follow the convention, but all new entries should. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Whether to show a confirmation dialog to the user if a third party app targeting below SDK
+         level Q tries to enable Wi-Fi -->
+    <bool translatable="false" name="config_showConfirmationDialogForThirdPartyAppsEnablingWifi">true</bool>
+
     <!-- boolean indicating whether the WiFi chipset has 5GHz band support.
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
