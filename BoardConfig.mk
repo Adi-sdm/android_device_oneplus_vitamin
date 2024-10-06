@@ -167,6 +167,8 @@ VENDOR_SECURITY_PATCH := 2024-06-05
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 include hardware/oplus/sepolicy/mtk/SEPolicy.mk
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified boot
 BOARD_AVB_ENABLE := true
